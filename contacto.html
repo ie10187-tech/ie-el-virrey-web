@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>Contáctanos - I.E.P.S.M. N° 10187 "El Virrey"</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero-pagina fade-in text-center">
+            <h1 class="hero-titulo">ESTAMOS AQUÍ PARA AYUDARTE</h1>
+            <div class="hero-linea mx-auto"></div>
+        </section>
+
+        <!-- Tarjetas de contacto rápido -->
+        <section class="container contacto-rapido-section">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="contacto-card hover-lift">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <h3 class="contacto-card-titulo">Dirección</h3>
+                        <p class="contacto-card-texto">Carretera Panamericana Norte Km. 157, El Virrey, Olmos</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contacto-card hover-lift">
+                        <i class="bi bi-telephone-fill"></i>
+                        <h3 class="contacto-card-titulo">Teléfono</h3>
+                        <p class="contacto-card-texto">(+51) 978 873 974</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contacto-card hover-lift">
+                        <i class="bi bi-envelope-fill"></i>
+                        <h3 class="contacto-card-titulo">Correo</h3>
+                        <p class="contacto-card-texto">ie10187elvirrey@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario + Mapa -->
+        <section class="container formulario-mapa-section">
+            <div class="row g-4">
+                <!-- Formulario -->
+                <div class="col-lg-6">
+                    <h2 class="titulo-seccion">ENVÍANOS UN MENSAJE</h2>
+                    <form id="formContacto" class="form-contacto" name="contacto" method="POST" data-netlify="true"
+                        action="/gracias.html" novalidate>
+                        <input type="hidden" name="form-name" value="contacto">
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" name="correo" required>
+                            <div class="invalid-feedback">Ingresa un correo válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <select class="form-select" id="asunto" name="asunto" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="admision">Admisión / Matrícula</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="reclamo">Reclamo o queja</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <div class="invalid-feedback">Selecciona un asunto.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                            <div class="invalid-feedback">Escribe tu mensaje.</div>
+                        </div>
+                        <button type="submit" class="btn btn-institucional-fill rounded-pill px-4">
+                            Enviar mensaje <i class="bi bi-send-fill"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col-lg-6">
+                    <h2 class="titulo-seccion">CÓMO LLEGAR</h2>
+                    <div class="mapa-contacto-responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.6081137697706!2d-79.98113959778665!3d-5.534913721534642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904afbbc1f27f157%3A0x9e9be9fabf38e24b!2sEl%20Virrey!5e0!3m2!1ses-419!2spe!4v1785197756864!5m2!1ses-419!2spe"
+                            allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horario de atención -->
+        <section class="container horario-atencion-section">
+            <h2 class="titulo-seccion">HORARIO DE ATENCIÓN - SECRETARÍA</h2>
+            <div class="horario-atencion-card">
+                <div class="row g-3 text-center">
+                    <div class="col-md-6">
+                        <i class="bi bi-calendar-week-fill"></i>
+                        <h3 class="horario-atencion-titulo">Lunes a Viernes</h3>
+                        <p class="horario-atencion-hora">8:00 AM - 1:00 PM</p>
+                    </div>
+                    <div class="col-md-6">
+                        <i class="bi bi-calendar-x-fill"></i>
+                        <h3 class="horario-atencion-titulo">Sábados y feriados</h3>
+                        <p class="horario-atencion-hora">Cerrado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/includes.js"></script>
+    <script src="js/validacion-formulario.js"></script>
+</body>
+
+</html>

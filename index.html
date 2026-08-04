@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/alerta-ticker.css">
+    <link rel="stylesheet" href="css/modal-emergencia.css">
+    <title>Inicio - I.E.P.S.M. N° 10187 "El Virrey"</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+
+        <!-- Barra de alerta (reutilizable, controlada por fecha de vigencia) -->
+        <a href="reprogramacion.html" class="alerta-ticker-link" id="alertaTicker" data-vigencia="2026-08-31"
+            aria-label="Ver información sobre reprogramación de actividades">
+            <div class="alerta-ticker tipo-emergencia">
+                <span class="alerta-ticker-etiqueta"><i class="bi bi-exclamation-triangle-fill"></i> AVISO
+                    IMPORTANTE</span>
+                <div class="alerta-ticker-track">
+                    <div class="alerta-ticker-contenido">
+                        <span>Reprogramación y recalendarización de actividades escolares por Fenómeno El Niño — Conoce
+                            el nuevo cronograma aquí</span>
+                        <span>Reprogramación y recalendarización de actividades escolares por Fenómeno El Niño — Conoce
+                            el nuevo cronograma aquí</span>
+                    </div>
+                </div>
+                <span class="alerta-ticker-ver">Ver más <i class="bi bi-arrow-right"></i></span>
+            </div>
+        </a>
+
+        <section class="hero-inicio fade-in">
+            <div class="hero-imagen">
+                <img src="img/virrey.jpg" alt="Fachada del colegio El Virrey" class="w-100 h-100">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-texto text-center">
+                <h1 class="hero-titulo">FORMA PARTE DE NUESTRA COMUNIDAD EDUCATIVA</h1>
+                <div class="hero-linea mx-auto"></div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row g-3 valores-row">
+                <div class="col-md-3 col-sm-6 fade-in">
+                    <div class="valor-card d-flex align-items-center gap-3">
+                        <div class="valor-icono"><i class="bi bi-book-half"></i></div>
+                        <div>
+                            <h2 class="valor-titulo">EDUCACIÓN<br>DE CALIDAD</h2>
+                            <p class="valor-texto">Formamos personas íntegras para un mundo mejor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fade-in">
+                    <div class="valor-card d-flex align-items-center gap-3">
+                        <div class="valor-icono"><i class="bi bi-people-fill"></i></div>
+                        <div>
+                            <h2 class="valor-titulo">FORMACIÓN<br>EN VALORES</h2>
+                            <p class="valor-texto">Cultivamos respeto, responsabilidad y solidaridad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fade-in">
+                    <div class="valor-card d-flex align-items-center gap-3">
+                        <div class="valor-icono"><i class="bi bi-mortarboard-fill"></i></div>
+                        <div>
+                            <h2 class="valor-titulo">DOCENTES<br>COMPROMETIDOS</h2>
+                            <p class="valor-texto">Acompañamiento que impulsa tus sueños.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 fade-in">
+                    <div class="valor-card d-flex align-items-center gap-3">
+                        <div class="valor-icono"><i class="bi bi-star-fill"></i></div>
+                        <div>
+                            <h2 class="valor-titulo">FUTUROS<br>SIN LÍMITES</h2>
+                            <p class="valor-texto">Preparados para los desafíos de mañana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container noticias-section">
+            <div class="d-flex justify-content-between align-items-center noticias-header">
+                <h2 class="noticias-titulo">ÚLTIMAS NOTICIAS</h2>
+                <a href="noticias.html" class="ver-todas">VER TODAS <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="noticia-card hover-lift">
+                        <img src="img/jornada.jpg" alt="Jornada de Arborización" class="noticia-img">
+                        <div class="noticia-body">
+                            <p class="noticia-fecha">15 MAYO, 2024</p>
+                            <h3 class="noticia-titulo-card">Jornada de Arborización</h3>
+                            <p class="noticia-texto">Nuestros estudiantes participaron activamente en la campaña por un
+                                entorno más verde.</p>
+                            <a href="noticia-detalle.html?id=jornada-arborizacion" class="noticia-link">LEER MÁS <i
+                                    class="bi bi-arrow-right"></i></a>
+
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="noticia-card hover-lift">
+                        <img src="img/taller.jpg" alt="Taller de Matemáticas" class="noticia-img">
+                        <div class="noticia-body">
+                            <p class="noticia-fecha">10 MAYO, 2024</p>
+                            <h3 class="noticia-titulo-card">Taller de Matemáticas</h3>
+                            <p class="noticia-texto">Actividades que fortalecen el pensamiento lógico y el trabajo en
+                                equipo.</p>
+                            <a href="noticia-detalle.html?id=taller-matematicas" class="noticia-link">LEER MÁS <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="noticia-card hover-lift">
+                        <img src="img/logros.jpg" alt="Orgullo Virreyano" class="noticia-img">
+                        <div class="noticia-body">
+                            <p class="noticia-fecha">08 MAYO, 2024</p>
+                            <h3 class="noticia-titulo-card">Orgullo Virreyano</h3>
+                            <p class="noticia-texto">Felicitamos a nuestros estudiantes por alcanzar importantes logros
+                                académicos y deportivos.</p>
+                            <a href="noticia-detalle.html?id=orgullo-virreyano" class="noticia-link">LEER MÁS <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container galeria-section">
+            <div class="d-flex justify-content-between align-items-center noticias-header">
+                <h2 class="noticias-titulo">VIDA ESCOLAR</h2>
+                <a href="galeria.html" class="ver-todas">VER GALERÍA <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="row g-2">
+                <div class="col-6 col-md-3">
+                    <a href="galeria.html" class="galeria-item">
+                        <img src="img/deporte.jpg" alt="Actividades deportivas">
+                        <span class="galeria-overlay">Deportes</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="galeria.html" class="galeria-item">
+                        <img src="img/ciencias.jpg" alt="Laboratorio de ciencias">
+                        <span class="galeria-overlay">Ciencias y biología</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="galeria.html" class="galeria-item">
+                        <img src="img/cultura.jpg" alt="Actividades culturales">
+                        <span class="galeria-overlay">Cultura</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="galeria.html" class="galeria-item">
+                        <img src="img/patio.jpg" alt="Vida en el patio escolar">
+                        <span class="galeria-overlay">Patio y recreo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container niveles-section">
+            <div class="noticias-header">
+                <h2 class="noticias-titulo">NUESTROS NIVELES</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="nivel-card hover-lift">
+                        <img src="img/primaria.jpg" alt="Primaria" class="nivel-img">
+                        <div class="nivel-overlay"></div>
+                        <div class="nivel-body">
+                            <h3 class="nivel-titulo">PRIMARIA</h3>
+                            <p class="nivel-texto">Formación integral desde 1° a 6° grado, fortaleciendo valores y
+                                habilidades para la vida.</p>
+                            <a href="primaria.html" class="btn btn-institucional rounded-pill px-4">CONOCE MÁS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="nivel-card hover-lift">
+                        <img src="img/secundaria.jpg" alt="Secundaria" class="nivel-img">
+                        <div class="nivel-overlay"></div>
+                        <div class="nivel-body">
+                            <h3 class="nivel-titulo">SECUNDARIA</h3>
+                            <p class="nivel-texto">Preparación académica sólida de 1° a 5°, orientada a los retos de la
+                                educación superior.</p>
+                            <a href="secundaria.html" class="btn btn-institucional rounded-pill px-4">CONOCE MÁS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Avisos y comunicados -->
+        <section class="container avisos-section">
+            <div class="noticias-header">
+                <h2 class="noticias-titulo">AVISOS Y COMUNICADOS</h2>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="aviso-card hover-lift">
+                        <h3 class="aviso-titulo">Proceso de Matrícula 2027</h3>
+                        <p class="aviso-texto">Inicio de matrícula para el nuevo año escolar, del 3 al 14 de marzo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="aviso-card hover-lift">
+                        <h3 class="aviso-titulo">Suspensión de Clases</h3>
+                        <p class="aviso-texto">No habrá clases el día 12 de agosto por reunión de coordinación docente.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="aviso-card hover-lift">
+                        <h3 class="aviso-titulo">Pago de Pensiones</h3>
+                        <p class="aviso-texto">Recuerda que el pago mensual vence el día 5 de cada mes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <!-- Modal emergente: Reprogramación de actividades -->
+    <div class="modal fade" id="modalEmergencia" tabindex="-1" aria-labelledby="modalEmergenciaLabel" aria-hidden="true"
+        data-vigencia="2026-08-31">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-emergencia-content">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Cerrar"></button>
+
+                <div class="modal-emergencia-fondo">
+                    <img src="img/cta-modal.png" alt="" class="modal-emergencia-imagen">
+                    <div class="modal-emergencia-overlay"></div>
+                    <div class="modal-emergencia-texto-sobre-imagen">
+                        <i class="bi bi-cloud-rain-heavy-fill modal-emergencia-icono"></i>
+                        <h2 class="modal-emergencia-titulo">Reprogramación de Actividades Escolares</h2>
+                    </div>
+                </div>
+
+                <div class="modal-body text-center">
+                    <p class="modal-emergencia-texto">
+                        Debido al Fenómeno El Niño, se han reprogramado diversas actividades del calendario
+                        escolar. Conoce las disposiciones del MINEDU y el nuevo cronograma institucional.
+                    </p>
+                    <a href="reprogramacion.html" class="btn btn-modal-emergencia rounded-pill px-4">
+                        Ver información completa <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <button type="button" class="modal-emergencia-cerrar" data-bs-dismiss="modal">
+                        Cerrar y seguir navegando
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/includes.js"></script>
+    <script src="js/utilidades.js"></script>
+    <script src="js/alerta-ticker.js"></script>
+    <script src="js/modal-emergencia.js"></script>
+</body>
+
+</html>

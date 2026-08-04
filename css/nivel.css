@@ -1,0 +1,76 @@
+.sobre-nivel-section,
+.areas-section,
+.horario-section,
+.docentes-section,
+.classroom-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.area-card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: inherit;
+}
+
+.area-card i {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.area-titulo {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0;
+}
+
+.area-ver-mas {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-top: 0.5rem;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.area-card:hover .area-ver-mas {
+  opacity: 1;
+}
+
+.horario-card {
+  background: var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  color: #fff;
+}
+
+.horario-card i {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.horario-titulo {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.horario-hora {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}

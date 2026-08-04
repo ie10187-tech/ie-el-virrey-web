@@ -1,0 +1,117 @@
+/* ============================
+   Modal emergente de alerta
+   ============================ */
+.modal-emergencia-content {
+    border: none;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* ============================
+   Imagen de fondo con difuminado (para legibilidad del texto)
+   ============================ */
+/* DESPUÉS */
+.modal-emergencia-fondo {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+@media (max-width: 575.98px) {
+  .modal-emergencia-fondo {
+    height: 150px;
+  }
+}
+.modal-emergencia-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1.5px);
+}
+
+.modal-emergencia-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(27, 94, 133, 0.95) 10%,
+            rgba(27, 94, 133, 0.55) 60%,
+            rgba(27, 94, 133, 0.25) 100%);
+}
+
+.modal-emergencia-texto-sobre-imagen {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.modal-emergencia-icono {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.modal-emergencia-titulo {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================
+   Cuerpo del modal
+   ============================ */
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-emergencia-texto {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* ============================
+   Botón CTA principal (azul institucional, redondeado)
+   ============================ */
+.btn-modal-emergencia {
+    background-color: var(--color-info);
+    border-color: var(--color-info);
+    color: #fff;
+    font-weight: 700;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn-modal-emergencia:hover {
+    background-color: var(--color-info-dark);
+    border-color: var(--color-info-dark);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.modal-emergencia-cerrar {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal-emergencia-cerrar:hover {
+    color: var(--color-primary-dark);
+}
+
+.btn-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 10;
+}

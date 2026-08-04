@@ -1,0 +1,58 @@
+/* ============================
+   Grid de noticias
+   ============================ */
+.noticias-grid-section {
+  margin-bottom: 2rem;
+}
+
+.noticia-img-wrapper {
+  position: relative;
+}
+
+.noticia-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50px;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
+.badge-eventos {
+  background-color: var(--color-blue);
+}
+
+.badge-logros {
+  background-color: var(--color-warning);
+}
+
+.badge-comunicados {
+  background-color: var(--color-accent);
+}
+
+/* ============================
+   Paginación
+   ============================ */
+.paginacion-section {
+  margin-bottom: 3rem;
+}
+
+.pagination .page-link {
+  color: var(--color-primary-dark);
+  border-radius: 50px;
+  margin: 0 0.2rem;
+  border: 1.5px solid #ddd;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.pagination .page-link:hover {
+  background-color: #f0f0f0;
+  color: var(--color-primary-dark);
+}

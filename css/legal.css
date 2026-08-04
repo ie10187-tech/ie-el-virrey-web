@@ -1,0 +1,45 @@
+/* ============================
+   Contenido legal
+   ============================ */
+.legal-contenido-section {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.legal-actualizado {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.legal-subtitulo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ============================
+   Aviso informativo (usado en Libro de Reclamaciones)
+   ============================ */
+.alert-info-legal {
+    background-color: #eaf2f0;
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.25rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    color: #333;
+    margin: 1.5rem 0;
+}
+
+.alert-info-legal i {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}

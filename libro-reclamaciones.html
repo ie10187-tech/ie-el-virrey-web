@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/legal.css">
+    <title>Libro de Reclamaciones - I.E.P.S.M. N° 10187 "El Virrey"</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        
+        <!-- Hero -->
+        <section class="hero-pagina fade-in text-center">
+            <h1 class="hero-titulo">LIBRO DE RECLAMACIONES VIRTUAL</h1>
+            <div class="hero-linea mx-auto"></div>
+        </section>
+
+        <!-- Contenido -->
+        <section class="container legal-contenido-section">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <p class="parrafo-institucional">
+                        Conforme al Código de Protección y Defensa del Consumidor (Ley N° 29571), aplicable
+                        también a entidades públicas prestadoras de servicios educativos, la I.E.P.S.M. N° 10187
+                        "El Virrey" pone a tu disposición este Libro de Reclamaciones Virtual para que puedas
+                        registrar tus quejas o reclamos relacionados con el servicio educativo o la atención
+                        recibida en la institución.
+                    </p>
+
+                    <div class="alert-info-legal">
+                        <i class="bi bi-info-circle-fill"></i>
+                        <div>
+                            <strong>Queja:</strong> disconformidad con la atención al público, no relacionada
+                            directamente con el servicio educativo.<br>
+                            <strong>Reclamo:</strong> disconformidad con el servicio educativo brindado por la
+                            institución.
+                        </div>
+                    </div>
+
+                    <p class="legal-actualizado">
+                        La institución dará respuesta en un plazo máximo de 30 días calendario, conforme a lo
+                        establecido por ley.
+                    </p>
+
+                    <form id="formReclamo" class="form-contacto" name="libro-reclamaciones" method="POST"
+                        data-netlify="true" action="/gracias-reclamo.html" novalidate>
+                        <input type="hidden" name="form-name" value="libro-reclamaciones">
+
+                        <h2 class="legal-subtitulo">1. Datos del reclamante</h2>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombreReclamo" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombreReclamo" name="nombre" required>
+                                <div class="invalid-feedback">Ingresa tu nombre completo.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="dniReclamo" class="form-label">DNI</label>
+                                <input type="text" class="form-control" id="dniReclamo" name="dni" maxlength="8"
+                                    required>
+                                <div class="invalid-feedback">Ingresa tu número de DNI.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="correoReclamo" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="correoReclamo" name="correo" required>
+                                <div class="invalid-feedback">Ingresa un correo válido.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="telefonoReclamo" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefonoReclamo" name="telefono" required>
+                                <div class="invalid-feedback">Ingresa tu teléfono.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="direccionReclamo" class="form-label">Domicilio</label>
+                                <input type="text" class="form-control" id="direccionReclamo" name="direccion" required>
+                                <div class="invalid-feedback">Ingresa tu domicilio.</div>
+                            </div>
+                        </div>
+
+                        <h2 class="legal-subtitulo mt-4">2. Datos del estudiante (si el reclamo se relaciona a uno)</h2>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombreEstudiante" class="form-label">Nombre del estudiante
+                                    (opcional)</label>
+                                <input type="text" class="form-control" id="nombreEstudiante" name="estudiante">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="gradoSeccion" class="form-label">Grado y sección (opcional)</label>
+                                <input type="text" class="form-control" id="gradoSeccion" name="grado_seccion"
+                                    placeholder="Ej: 3° Secundaria - A">
+                            </div>
+                        </div>
+
+                        <h2 class="legal-subtitulo mt-4">3. Detalle</h2>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label d-block">Tipo</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="tipo" id="tipoQueja"
+                                        value="queja" required>
+                                    <label class="form-check-label" for="tipoQueja">Queja</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="tipo" id="tipoReclamo"
+                                        value="reclamo" required>
+                                    <label class="form-check-label" for="tipoReclamo">Reclamo</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="detalleReclamo" class="form-label">Detalle de tu queja o reclamo</label>
+                                <textarea class="form-control" id="detalleReclamo" name="detalle" rows="4"
+                                    required></textarea>
+                                <div class="invalid-feedback">Describe tu queja o reclamo.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="pedidoReclamo" class="form-label">Pedido concreto</label>
+                                <textarea class="form-control" id="pedidoReclamo" name="pedido" rows="3"
+                                    required></textarea>
+                                <div class="invalid-feedback">Indica qué solicitas como solución.</div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-institucional-fill rounded-pill px-4 mt-3">
+                            Enviar reclamación <i class="bi bi-send-fill"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/includes.js"></script>
+    <script src="js/validacion-formulario.js"></script>
+</body>
+
+</html>

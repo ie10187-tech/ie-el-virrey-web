@@ -1,0 +1,15 @@
+# Normaliza automáticamente los finales de línea de todo el texto a LF
+# al momento de hacer commit. Así se resuelve la mezcla CRLF/LF sin tener
+# que editar archivo por archivo.
+* text=auto eol=lf
+
+# Los binarios nunca se tocan (evita que Git los "normalice" y los rompa)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg binary
+*.ico binary
+*.mp3 binary
+*.pdf binary
+*.woff binary
+*.woff2 binary

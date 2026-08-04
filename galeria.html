@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <title>Galería - I.E.P.S.M. N° 10187 "El Virrey"</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero-pagina fade-in text-center">
+            <h1 class="hero-titulo">GALERÍA DE FOTOS</h1>
+            <div class="hero-linea mx-auto"></div>
+        </section>
+
+        <!-- Categorías (cada una abre su carrusel) -->
+        <section class="container categorias-galeria-section">
+            <div class="row g-3">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="categoria-galeria-card hover-lift" data-bs-toggle="modal"
+                        data-bs-target="#modalDeportes">
+                        <img src="img/deporte.jpg" alt="Deportes">
+                        <div class="categoria-galeria-overlay">
+                            <h3 class="categoria-galeria-titulo">Deportes</h3>
+                            <span class="categoria-galeria-count"><i class="bi bi-images"></i> 2 fotos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="categoria-galeria-card hover-lift" data-bs-toggle="modal"
+                        data-bs-target="#modalCiencias">
+                        <img src="img/ciencias.jpg" alt="Ciencias">
+                        <div class="categoria-galeria-overlay">
+                            <h3 class="categoria-galeria-titulo">Ciencias</h3>
+                            <span class="categoria-galeria-count"><i class="bi bi-images"></i> 2 fotos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="categoria-galeria-card hover-lift" data-bs-toggle="modal"
+                        data-bs-target="#modalCultura">
+                        <img src="img/cultura.jpg" alt="Cultura">
+                        <div class="categoria-galeria-overlay">
+                            <h3 class="categoria-galeria-titulo">Cultura</h3>
+                            <span class="categoria-galeria-count"><i class="bi bi-images"></i> 2 fotos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="categoria-galeria-card hover-lift" data-bs-toggle="modal" data-bs-target="#modalPatio">
+                        <img src="img/patio.jpg" alt="Patio y recreo">
+                        <div class="categoria-galeria-overlay">
+                            <h3 class="categoria-galeria-titulo">Patio y recreo</h3>
+                            <span class="categoria-galeria-count"><i class="bi bi-images"></i> 1 foto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="categoria-galeria-card hover-lift" data-bs-toggle="modal"
+                        data-bs-target="#modalEventos">
+                        <img src="img/arborizacion-2.jpg" alt="Eventos">
+                        <div class="categoria-galeria-overlay">
+                            <h3 class="categoria-galeria-titulo">Eventos</h3>
+                            <span class="categoria-galeria-count"><i class="bi bi-images"></i> 2 fotos</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <!-- ============================
+         Modal + Carrusel: Deportes
+         ============================ -->
+    <div class="modal fade" id="modalDeportes" tabindex="-1" aria-labelledby="modalDeportesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close modal-cerrar-flotante" data-bs-dismiss="modal"
+                    aria-label="Cerrar"></button>
+                <div id="carruselDeportes" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/deporte.jpg" class="d-block w-100 carrusel-img" alt="Actividades deportivas">
+                            <p class="carrusel-caption">Actividades deportivas - Educación Física</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/logro-voley.jpg" class="d-block w-100 carrusel-img" alt="Campeonato de Vóley">
+                            <p class="carrusel-caption">Campeonato de Vóley Escolar</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselDeportes"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselDeportes"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================
+         Modal + Carrusel: Ciencias
+         ============================ -->
+    <div class="modal fade" id="modalCiencias" tabindex="-1" aria-labelledby="modalCienciasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close modal-cerrar-flotante" data-bs-dismiss="modal"
+                    aria-label="Cerrar"></button>
+                <div id="carruselCiencias" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/ciencias.jpg" class="d-block w-100 carrusel-img"
+                                alt="Laboratorio de ciencias">
+                            <p class="carrusel-caption">Laboratorio de ciencias y biología</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/logro-feria-ciencia.jpg" class="d-block w-100 carrusel-img"
+                                alt="Feria de Ciencias">
+                            <p class="carrusel-caption">Feria de Ciencias Regional 2024</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselCiencias"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselCiencias"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================
+         Modal + Carrusel: Cultura
+         ============================ -->
+    <div class="modal fade" id="modalCultura" tabindex="-1" aria-labelledby="modalCulturaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close modal-cerrar-flotante" data-bs-dismiss="modal"
+                    aria-label="Cerrar"></button>
+                <div id="carruselCultura" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/cultura.jpg" class="d-block w-100 carrusel-img" alt="Actividades culturales">
+                            <p class="carrusel-caption">Actividades culturales institucionales</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/logro-danza.jpg" class="d-block w-100 carrusel-img" alt="Festival de danza">
+                            <p class="carrusel-caption">Festival de Danzas Típicas</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselCultura"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselCultura"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================
+         Modal + Carrusel: Patio y recreo
+         ============================ -->
+    <div class="modal fade" id="modalPatio" tabindex="-1" aria-labelledby="modalPatioLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close modal-cerrar-flotante" data-bs-dismiss="modal"
+                    aria-label="Cerrar"></button>
+                <div id="carruselPatio" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/patio.jpg" class="d-block w-100 carrusel-img" alt="Patio y áreas de recreo">
+                            <p class="carrusel-caption">Patio y áreas de recreo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================
+         Modal + Carrusel: Eventos
+         ============================ -->
+    <div class="modal fade" id="modalEventos" tabindex="-1" aria-labelledby="modalEventosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close modal-cerrar-flotante" data-bs-dismiss="modal"
+                    aria-label="Cerrar"></button>
+                <div id="carruselEventos" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/arborizacion-2.jpg" class="d-block w-100 carrusel-img"
+                                alt="Jornada de Arborización">
+                            <p class="carrusel-caption">Jornada de Arborización 2024</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/logro-futbol.jpg" class="d-block w-100 carrusel-img" alt="Torneo de fútbol">
+                            <p class="carrusel-caption">Torneo Interescolar de Fútbol</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselEventos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselEventos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/includes.js"></script>
+</body>
+
+</html>

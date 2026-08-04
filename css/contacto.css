@@ -1,0 +1,111 @@
+/* ============================
+   Secciones: espaciado
+   ============================ */
+.contacto-rapido-section,
+.formulario-mapa-section,
+.horario-atencion-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* ============================
+   Tarjetas de contacto rápido
+   ============================ */
+.contacto-card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+}
+
+.contacto-card i {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.contacto-card-titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.4rem;
+}
+
+.contacto-card-texto {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* ============================
+   Formulario
+   ============================ */
+.form-contacto .form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-contacto .form-control,
+.form-contacto .form-select {
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+.form-contacto .form-control:focus,
+.form-contacto .form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(30, 125, 79, 0.15);
+}
+
+/* ============================
+   Mapa
+   ============================ */
+.mapa-contacto-responsive {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.mapa-contacto-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ============================
+   Horario de atención
+   ============================ */
+.horario-atencion-card {
+  background: var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  color: #fff;
+}
+
+.horario-atencion-card i {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.horario-atencion-titulo {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.horario-atencion-hora {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}

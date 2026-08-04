@@ -1,0 +1,91 @@
+/* ============================
+   Por qué elegirnos
+   ============================ */
+.por-que-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.razon-card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem 1.25rem;
+  height: 100%;
+  text-align: center;
+}
+
+.razon-card i {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.razon-titulo {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.4rem;
+}
+
+.razon-texto {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+/* ============================
+   Accesos rápidos
+   ============================ */
+.accesos-section {
+  margin-bottom: 3rem;
+}
+
+.acceso-card {
+  position: relative;
+  display: block;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  color: #fff;
+}
+
+.acceso-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-medium);
+}
+
+.acceso-card:hover img {
+  transform: scale(1.05);
+}
+
+.acceso-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 25%, rgba(0,0,0,0.15) 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
+}
+
+.acceso-titulo {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.35rem;
+}
+
+.acceso-texto {
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+  opacity: 0.9;
+}
+
+.acceso-link {
+  font-size: 0.8rem;
+  font-weight: 700;
+}

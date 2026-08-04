@@ -1,0 +1,107 @@
+/* ============================
+   Barra de alerta tipo ticker/marquesina
+   Reutilizable: cambia la clase "tipo-*" para otro color/uso
+   ============================ */
+.alerta-ticker-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.alerta-ticker {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    height: 42px;
+}
+
+/* Variantes de color según el tipo de aviso */
+/* DESPUÉS */
+.alerta-ticker.tipo-emergencia {
+    background-color: var(--color-info);
+}
+
+.alerta-ticker.tipo-informativo {
+    background-color: var(--color-primary);
+}
+
+.alerta-ticker.tipo-evento {
+    background-color: var(--color-warning);
+}
+
+.alerta-ticker-etiqueta {
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.alerta-ticker-track {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.alerta-ticker-contenido {
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    height: 100%;
+    align-items: center;
+    animation: ticker-scroll 22s linear infinite;
+}
+
+.alerta-ticker-contenido span {
+    padding-right: 4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.alerta-ticker-ver {
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: background-color var(--transition-fast);
+}
+
+.alerta-ticker-link:hover .alerta-ticker-ver {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.alerta-ticker-link:hover .alerta-ticker-contenido {
+    animation-play-state: paused;
+}
+
+@media (max-width: 575.98px) {
+    .alerta-ticker-etiqueta span {
+        display: none;
+    }
+
+    .alerta-ticker-ver span {
+        display: none;
+    }
+}

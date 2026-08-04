@@ -1,0 +1,90 @@
+/* ============================
+   Imagen principal
+   ============================ */
+.detalle-hero-section {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.detalle-hero-imagen {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 21 / 9;
+}
+
+.detalle-hero-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detalle-hero-imagen .noticia-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 50px;
+  color: #fff;
+}
+
+/* ============================
+   Contenido
+   ============================ */
+.detalle-contenido-section {
+  margin-bottom: 3rem;
+}
+
+.detalle-fecha {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.detalle-titulo {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.detalle-galeria {
+  margin: 1.5rem 0;
+}
+
+.detalle-galeria-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.detalle-compartir {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.compartir-icono {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast);
+}
+
+.compartir-icono:hover {
+  background-color: var(--color-primary-dark);
+  color: #fff;
+}

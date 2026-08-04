@@ -1,0 +1,101 @@
+/* ============================
+   Buscador
+   ============================ */
+.faq-buscador-section {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.faq-buscador {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.faq-buscador-icono {
+    position: absolute;
+    left: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+    pointer-events: none;
+}
+
+.faq-buscador input {
+    padding-left: 2.7rem;
+    border-radius: 50px;
+}
+
+/* ============================
+   Acordeón
+   ============================ */
+.faq-contenido-section {
+    margin-bottom: 2rem;
+    max-width: 850px;
+}
+
+.faq-item {
+    margin-bottom: 0.75rem;
+}
+
+.accordion-item {
+    border: 1px solid #eee;
+    border-radius: var(--radius-sm) !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #eaf2f0;
+    color: var(--color-primary-dark);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--color-primary);
+}
+
+.accordion-body {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* ============================
+   CTA final
+   ============================ */
+.faq-cta-section {
+    margin-bottom: 3rem;
+}
+
+.faq-cta-card {
+    background-color: var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 1.5rem;
+    color: #fff;
+}
+
+.faq-cta-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.faq-cta-titulo {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.faq-cta-texto {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}

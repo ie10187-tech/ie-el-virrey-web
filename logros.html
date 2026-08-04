@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/logros.css">
+    <title>Logros Institucionales - I.E.P.S.M. N° 10187 "El Virrey"</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        
+        <!-- Hero -->
+        <section class="hero-pagina fade-in text-center">
+            <h1 class="hero-titulo">NUESTROS LOGROS INSTITUCIONALES</h1>
+            <div class="hero-linea mx-auto"></div>
+        </section>
+
+        <!-- Cifras destacadas -->
+        <section class="container cifras-section">
+            <div class="row g-3 text-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="cifra-card">
+                        <span class="cifra-numero">15+</span>
+                        <p class="cifra-texto">Años de trayectoria</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="cifra-card">
+                        <span class="cifra-numero">30+</span>
+                        <p class="cifra-texto">Reconocimientos obtenidos</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="cifra-card">
+                        <span class="cifra-numero">500+</span>
+                        <p class="cifra-texto">Estudiantes formados</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="cifra-card">
+                        <span class="cifra-numero">10+</span>
+                        <p class="cifra-texto">Concursos ganados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cinta de filtros -->
+        <section class="container filtros-section">
+            <div class="filtros-cinta" data-items=".logro-item" data-vacio="#sinResultadosLogros">
+                <button class="filtro-chip active" data-filtro="todos">Todos</button>
+                <button class="filtro-chip" data-filtro="academicos">Académicos</button>
+                <button class="filtro-chip" data-filtro="deportivos">Deportivos</button>
+                <button class="filtro-chip" data-filtro="culturales">Culturales</button>
+            </div>
+        </section>
+
+        <!-- Grid de logros -->
+        <section class="container logros-grid-section">
+            <div class="row g-4" id="gridLogros">
+
+                <div class="col-md-4 logro-item" data-categoria="academicos">
+                    <article class="logro-card hover-lift">
+                        <div class="logro-img-wrapper">
+                            <img src="img/logro-feria-ciencia.jpg" alt="Feria de Ciencias" class="logro-img">
+                            <span class="logro-badge badge-academicos">Académico</span>
+                            <span class="logro-anio">2024</span>
+                        </div>
+                        <div class="logro-body">
+                            <h3 class="logro-titulo">1er Puesto - Feria de Ciencias Regional</h3>
+                            <p class="logro-texto">Estudiantes de secundaria obtuvieron el primer lugar con un proyecto de energía renovable.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4 logro-item" data-categoria="deportivos">
+                    <article class="logro-card hover-lift">
+                        <div class="logro-img-wrapper">
+                            <img src="img/logro-voley.jpg" alt="Campeonato de Vóley" class="logro-img">
+                            <span class="logro-badge badge-deportivos">Deportivo</span>
+                            <span class="logro-anio">2024</span>
+                        </div>
+                        <div class="logro-body">
+                            <h3 class="logro-titulo">Campeonas de Vóley - Juegos Florales</h3>
+                            <p class="logro-texto">El equipo femenino de vóley se coronó campeón en los Juegos Florales Escolares de Olmos.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4 logro-item" data-categoria="culturales">
+                    <article class="logro-card hover-lift">
+                        <div class="logro-img-wrapper">
+                            <img src="img/logro-danza.jpg" alt="Concurso de Danza" class="logro-img">
+                            <span class="logro-badge badge-culturales">Cultural</span>
+                            <span class="logro-anio">2023</span>
+                        </div>
+                        <div class="logro-body">
+                            <h3 class="logro-titulo">2do Puesto - Festival de Danzas Típicas</h3>
+                            <p class="logro-texto">El grupo de danza institucional representó a Olmos en el festival provincial.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4 logro-item" data-categoria="academicos">
+                    <article class="logro-card hover-lift">
+                        <div class="logro-img-wrapper">
+                            <img src="img/logro-matematica.jpg" alt="Olimpiada de Matemática" class="logro-img">
+                            <span class="logro-badge badge-academicos">Académico</span>
+                            <span class="logro-anio">2023</span>
+                        </div>
+                        <div class="logro-body">
+                            <h3 class="logro-titulo">Finalistas - Olimpiada Nacional de Matemática</h3>
+                            <p class="logro-texto">Dos estudiantes de nuestra institución clasificaron a la etapa nacional.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4 logro-item" data-categoria="deportivos">
+                    <article class="logro-card hover-lift">
+                        <div class="logro-img-wrapper">
+                            <img src="img/logro-futbol.jpg" alt="Torneo de Fútbol" class="logro-img">
+                            <span class="logro-badge badge-deportivos">Deportivo</span>
+                            <span class="logro-anio">2023</span>
+                        </div>
+                        <div class="logro-body">
+                            <h3 class="logro-titulo">Subcampeones - Torneo Interescolar de Fútbol</h3>
+                            <p class="logro-texto">El equipo masculino de fútbol obtuvo el segundo lugar a nivel distrital.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4 logro-item" data-categoria="culturales">
+                    <article class="logro-card hover-lift">
+                        <div class="logro-img-wrapper">
+                            <img src="img/logro-oratoria.jpg" alt="Concurso de Oratoria" class="logro-img">
+                            <span class="logro-badge badge-culturales">Cultural</span>
+                            <span class="logro-anio">2022</span>
+                        </div>
+                        <div class="logro-body">
+                            <h3 class="logro-titulo">1er Puesto - Concurso de Oratoria Escolar</h3>
+                            <p class="logro-texto">Estudiante de 5° de secundaria ganó el concurso provincial de oratoria.</p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <p id="sinResultadosLogros" class="sin-resultados d-none">No hay logros registrados en esta categoría por el momento.</p>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/includes.js"></script>
+    <script src="js/filtro.js"></script>
+</body>
+
+</html>
