@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "noticias"
+    label: "Noticias"
+    files:
+      - name: "listado"
+        label: "Listado de noticias"
+        file: "data/noticias.json"
+        fields:
+          - name: "noticias"
+            label: "Noticias"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: "id", label: "ID interno (sin espacios ni tildes, ej: jornada-arborizacion)", widget: "string" }
+              - { name: "titulo", label: "Título", widget: "string" }
+              - { name: "fecha", label: "Fecha (ej: 15 de mayo, 2024)", widget: "string" }
+              - name: "categoria"
+                label: "Categoría"
+                widget: "select"
+                options:
+                  - { label: "Eventos", value: "eventos" }
+                  - { label: "Logros", value: "logros" }
+                  - { label: "Comunicados", value: "comunicados" }
+              - { name: "imagen", label: "Imagen principal", widget: "image" }
+              - { name: "resumen", label: "Resumen corto (para la tarjeta de la lista)", widget: "text" }
+              - name: "contenido"
+                label: "Contenido completo (un párrafo por línea)"
+                widget: "list"
+                field: { name: "parrafo", label: "Párrafo", widget: "text" }
+              - name: "galeria"
+                label: "Galería de fotos (opcional)"
+                widget: "list"
+                required: false
+                fields:
+                  - { name: "src", label: "Imagen", widget: "image" }
+                  - { name: "alt", label: "Descripción de la imagen", widget: "string" }
