@@ -1,0 +1,117 @@
+{
+  "secciones": [
+    {
+      "titulo": "Inicio",
+      "url": "index.html",
+      "keywords": [
+        "inicio",
+        "home",
+        "portada"
+      ]
+    },
+    {
+      "titulo": "Nosotros",
+      "url": "nosotros.html",
+      "keywords": [
+        "nosotros",
+        "historia",
+        "misión",
+        "visión",
+        "institución"
+      ]
+    },
+    {
+      "titulo": "Primaria",
+      "url": "primaria.html",
+      "keywords": [
+        "primaria",
+        "1er grado",
+        "2do grado",
+        "3er grado",
+        "niños"
+      ]
+    },
+    {
+      "titulo": "Secundaria",
+      "url": "secundaria.html",
+      "keywords": [
+        "secundaria",
+        "4to",
+        "5to",
+        "adolescentes",
+        "bachiller"
+      ]
+    },
+    {
+      "titulo": "Galería",
+      "url": "galeria.html",
+      "keywords": [
+        "galería",
+        "fotos",
+        "imágenes",
+        "actividades",
+        "eventos"
+      ]
+    },
+    {
+      "titulo": "Logros",
+      "url": "logros.html",
+      "keywords": [
+        "logros",
+        "premios",
+        "reconocimientos",
+        "trofeos"
+      ]
+    },
+    {
+      "titulo": "Noticias",
+      "url": "noticias.html",
+      "keywords": [
+        "noticias",
+        "novedades",
+        "comunicados"
+      ]
+    },
+    {
+      "titulo": "Contáctanos",
+      "url": "contacto.html",
+      "keywords": [
+        "contacto",
+        "teléfono",
+        "dirección",
+        "email",
+        "formulario"
+      ]
+    },
+    {
+      "titulo": "Aviso Institucional",
+      "url": "aviso-institucional.html",
+      "keywords": [
+        "fenómeno niño",
+        "reprogramación",
+        "cronograma",
+        "alerta",
+        "aviso"
+      ]
+    },
+    {
+      "titulo": "Preguntas Frecuentes",
+      "url": "preguntas-frecuentes.html",
+      "keywords": [
+        "faq",
+        "preguntas",
+        "frecuentes",
+        "dudas"
+      ]
+    },
+    {
+      "titulo": "Conoce Más",
+      "url": "conoce-mas.html",
+      "keywords": [
+        "conoce",
+        "por qué elegirnos",
+        "razones"
+      ]
+    }
+  ]
+}

@@ -6,8 +6,195 @@ media_folder: "img/uploads"
 public_folder: "/img/uploads"
 
 collections:
+
+  # ─────────────────────────────────────────
+  # ALERTA / AVISO BARRA SUPERIOR
+  # ─────────────────────────────────────────
+  - name: "alerta"
+    label: "🚨 Alerta — Barra superior"
+    files:
+      - name: "configuracion"
+        label: "Configurar aviso de la barra superior"
+        file: "data/alerta.json"
+        fields:
+          - { name: "activa", label: "¿Mostrar la barra de alerta?", widget: "boolean", default: false }
+          - name: "tipo"
+            label: "Color de la alerta"
+            widget: "select"
+            options:
+              - { label: "🔴 Emergencia (rojo/oscuro)", value: "emergencia" }
+              - { label: "🔵 Informativo (azul)", value: "informativo" }
+              - { label: "🟡 Evento (dorado)", value: "evento" }
+          - name: "icono"
+            label: "Ícono (Bootstrap Icons)"
+            widget: "select"
+            options:
+              - { label: "⚠️ Triángulo de advertencia", value: "bi-exclamation-triangle-fill" }
+              - { label: "ℹ️ Información", value: "bi-info-circle-fill" }
+              - { label: "🌧️ Lluvia / El Niño", value: "bi-cloud-rain-heavy-fill" }
+              - { label: "📢 Megáfono", value: "bi-megaphone-fill" }
+              - { label: "📅 Calendario", value: "bi-calendar-event-fill" }
+              - { label: "⭐ Estrella", value: "bi-star-fill" }
+          - { name: "etiqueta", label: "Etiqueta izquierda (ej: AVISO IMPORTANTE)", widget: "string" }
+          - { name: "texto", label: "Mensaje que se desplaza en la barra", widget: "string" }
+          - { name: "url_destino", label: "Página de destino al hacer clic (ej: aviso-institucional.html)", widget: "string" }
+          - { name: "url_label", label: "Texto del botón derecho (ej: Ver más)", widget: "string", default: "Ver más" }
+          - { name: "vigencia", label: "Fecha de vigencia — se oculta automáticamente después (AAAA-MM-DD)", widget: "string" }
+
+  # ─────────────────────────────────────────
+  # AVISO INSTITUCIONAL (Fenómeno El Niño)
+  # ─────────────────────────────────────────
+  - name: "aviso_institucional"
+    label: "📋 Aviso Institucional — Cronograma y documentos"
+    files:
+      - name: "contenido"
+        label: "Fecha, cronograma y documentos oficiales"
+        file: "data/aviso-institucional.json"
+        fields:
+          - { name: "fecha_actualizacion", label: "Fecha de última actualización (ej: 30 de julio de 2026)", widget: "string" }
+          - { name: "referencia_oficio", label: "Número de oficio de referencia", widget: "string" }
+          - name: "cronograma"
+            label: "Tabla de cronograma escolar"
+            widget: "list"
+            summary: "{{fields.bloque}}"
+            fields:
+              - { name: "bloque", label: "Bloque / Periodo (ej: III Bimestre)", widget: "string" }
+              - { name: "inicio", label: "Fecha de inicio (DD/MM/AAAA)", widget: "string" }
+              - { name: "termino", label: "Fecha de término (DD/MM/AAAA)", widget: "string" }
+              - { name: "semanas", label: "N° de semanas (ej: 09 semanas)", widget: "string" }
+              - { name: "observacion", label: "Observaciones", widget: "text" }
+          - name: "documentos"
+            label: "Documentos oficiales (tarjetas PDF)"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: "titulo", label: "Título del documento", widget: "string" }
+              - { name: "fecha", label: "Fecha de publicación (ej: 24 de julio de 2026)", widget: "string" }
+              - name: "modal"
+                label: "Modal PDF que abre (no cambiar salvo que agregues uno nuevo)"
+                widget: "select"
+                options:
+                  - { label: "PDF 1", value: "modalPdf1" }
+                  - { label: "PDF 2", value: "modalPdf2" }
+                  - { label: "PDF 3", value: "modalPdf3" }
+                  - { label: "PDF 4", value: "modalPdf4" }
+
+  # ─────────────────────────────────────────
+  # LOGROS DESTACADOS (inicio)
+  # ─────────────────────────────────────────
+  - name: "logros"
+    label: "🏆 Logros Destacados — Portada"
+    files:
+      - name: "listado"
+        label: "Tarjetas de logros en portada"
+        file: "data/logros.json"
+        fields:
+          - name: "logros"
+            label: "Logros (máximo 4 recomendado)"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - name: "icono"
+                label: "Ícono"
+                widget: "select"
+                options:
+                  - { label: "🏆 Trofeo", value: "bi-trophy-fill" }
+                  - { label: "🤖 Robótica", value: "bi-robot" }
+                  - { label: "🎵 Música / Marinera", value: "bi-music-note-beamed" }
+                  - { label: "⭐ Estrella", value: "bi-star-fill" }
+                  - { label: "📚 Libro", value: "bi-book-fill" }
+                  - { label: "🏅 Medalla / Premio", value: "bi-award-fill" }
+                  - { label: "🎨 Arte", value: "bi-palette-fill" }
+                  - { label: "⚽ Deporte", value: "bi-dribbble" }
+              - { name: "titulo", label: "Título del logro (en MAYÚSCULAS)", widget: "string" }
+              - { name: "texto", label: "Descripción breve", widget: "string" }
+
+  # ─────────────────────────────────────────
+  # VIDA ESCOLAR (galería portada)
+  # ─────────────────────────────────────────
+  - name: "vida_escolar"
+    label: "📷 Vida Escolar — Fotos en portada"
+    files:
+      - name: "listado"
+        label: "Fotos de vida escolar (portada)"
+        file: "data/vida-escolar.json"
+        fields:
+          - name: "items"
+            label: "Fotos (máximo 4)"
+            widget: "list"
+            summary: "{{fields.etiqueta}}"
+            fields:
+              - { name: "imagen", label: "Foto", widget: "image" }
+              - { name: "alt", label: "Descripción para accesibilidad (ej: Estudiantes en laboratorio)", widget: "string" }
+              - { name: "etiqueta", label: "Etiqueta visible sobre la foto (ej: Ciencias)", widget: "string" }
+
+  # ─────────────────────────────────────────
+  # AVISOS Y COMUNICADOS (portada)
+  # ─────────────────────────────────────────
+  - name: "avisos"
+    label: "📣 Avisos y Comunicados — Portada"
+    files:
+      - name: "listado"
+        label: "Tarjetas de avisos en portada"
+        file: "data/avisos.json"
+        fields:
+          - name: "avisos"
+            label: "Avisos (máximo 3 recomendado)"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: "titulo", label: "Título del aviso", widget: "string" }
+              - { name: "texto", label: "Resumen (aparece en la tarjeta)", widget: "text" }
+              - name: "detalle"
+                label: "Texto completo (opcional — aparece en modal al hacer clic en 'Ver detalle')"
+                widget: "text"
+                required: false
+
+  # ─────────────────────────────────────────
+  # PÁGINA: CONOCE MÁS
+  # ─────────────────────────────────────────
+  - name: "conoce_mas"
+    label: "🏫 Página: Conoce Más"
+    files:
+      - name: "contenido"
+        label: "Razones y accesos rápidos"
+        file: "data/conoce-mas.json"
+        fields:
+          - name: "razones"
+            label: "¿Por qué elegirnos? (tarjetas de razones)"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - name: "icono"
+                label: "Ícono"
+                widget: "select"
+                options:
+                  - { label: "🎓 Birrete", value: "bi-mortarboard-fill" }
+                  - { label: "❤️ Corazón / Valores", value: "bi-heart-fill" }
+                  - { label: "👥 Personas / Docentes", value: "bi-people-fill" }
+                  - { label: "🏫 Edificio / Infraestructura", value: "bi-buildings-fill" }
+                  - { label: "⭐ Estrella", value: "bi-star-fill" }
+                  - { label: "🌱 Naturaleza", value: "bi-tree-fill" }
+                  - { label: "📚 Libro", value: "bi-book-fill" }
+                  - { label: "🏅 Premio", value: "bi-award-fill" }
+              - { name: "titulo", label: "Título de la razón", widget: "string" }
+              - { name: "texto", label: "Descripción", widget: "text" }
+          - name: "accesos"
+            label: "Accesos rápidos (tarjetas con foto)"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: "imagen", label: "Foto de fondo", widget: "image" }
+              - { name: "alt", label: "Descripción de la foto (accesibilidad)", widget: "string" }
+              - { name: "titulo", label: "Título de la sección (en MAYÚSCULAS)", widget: "string" }
+              - { name: "texto", label: "Descripción breve", widget: "text" }
+              - { name: "url", label: "Enlace de destino (ej: nosotros.html)", widget: "string" }
+
+  # ─────────────────────────────────────────
+  # NOTICIAS
+  # ─────────────────────────────────────────
   - name: "noticias"
-    label: "Noticias"
+    label: "📰 Noticias"
     files:
       - name: "listado"
         label: "Listado de noticias"
@@ -41,3 +228,25 @@ collections:
                 fields:
                   - { name: "src", label: "Imagen", widget: "image" }
                   - { name: "alt", label: "Descripción de la imagen", widget: "string" }
+
+  # ─────────────────────────────────────────
+  # BUSCADOR — mapa de secciones del sitio
+  # ─────────────────────────────────────────
+  - name: "buscador"
+    label: "🔍 Buscador — Secciones del sitio"
+    files:
+      - name: "mapa"
+        label: "Secciones que aparecen en el buscador del header"
+        file: "data/mapa-sitio.json"
+        fields:
+          - name: "secciones"
+            label: "Secciones"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: "titulo", label: "Nombre de la sección (ej: Galería)", widget: "string" }
+              - { name: "url", label: "Enlace (ej: galeria.html)", widget: "string" }
+              - name: "keywords"
+                label: "Palabras clave separadas por coma (ej: fotos, imágenes, actividades)"
+                widget: "list"
+                field: { name: "palabra", label: "Palabra clave", widget: "string" }

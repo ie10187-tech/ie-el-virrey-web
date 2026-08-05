@@ -1,0 +1,54 @@
+{
+  "razones": [
+    {
+      "icono": "bi-mortarboard-fill",
+      "titulo": "Educación de calidad",
+      "texto": "Formación académica sólida desde primaria hasta secundaria."
+    },
+    {
+      "icono": "bi-heart-fill",
+      "titulo": "Formación en valores",
+      "texto": "Respeto, responsabilidad y solidaridad en cada etapa del aprendizaje."
+    },
+    {
+      "icono": "bi-people-fill",
+      "titulo": "Docentes comprometidos",
+      "texto": "Un equipo cercano que acompaña a cada estudiante en su proceso."
+    },
+    {
+      "icono": "bi-buildings-fill",
+      "titulo": "Infraestructura adecuada",
+      "texto": "Aulas, biblioteca y espacios pensados para el aprendizaje."
+    }
+  ],
+  "accesos": [
+    {
+      "imagen": "img/acceso-nosotros.png",
+      "alt": "Nosotros",
+      "url": "nosotros.html",
+      "titulo": "NOSOTROS",
+      "texto": "Historia, misión, visión y valores institucionales."
+    },
+    {
+      "imagen": "img/acceso-primaria.png",
+      "alt": "Primaria",
+      "url": "primaria.html",
+      "titulo": "PRIMARIA",
+      "texto": "Formación integral de 1° a 6° grado."
+    },
+    {
+      "imagen": "img/acceso-secundaria.png",
+      "alt": "Secundaria",
+      "url": "secundaria.html",
+      "titulo": "SECUNDARIA",
+      "texto": "Preparación académica de 1° a 5° de secundaria."
+    },
+    {
+      "imagen": "img/acceso-galeria.png",
+      "alt": "Galería",
+      "url": "galeria.html",
+      "titulo": "GALERÍA",
+      "texto": "Un vistazo a la vida escolar en nuestras instalaciones."
+    }
+  ]
+}

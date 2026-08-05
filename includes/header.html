@@ -20,7 +20,6 @@
 <div class="container py-3">
   <div class="row align-items-center">
     <div class="col-lg-5 col-12 d-flex align-items-center justify-content-center justify-content-lg-start mb-3 mb-lg-0">
-      <!-- Enlace agregado aquí -->
       <a href="index.html" class="d-flex align-items-center gap-3 text-decoration-none">
         <img src="img/logo.svg" alt="Logo I.E.P.S.M. El Virrey" class="site-logo">
         <h1 class="h5 fw-bold mb-0 text-success">I.E.P.S.M. N° 10187 "EL VIRREY"</h1>
@@ -28,10 +27,14 @@
     </div>
 
     <div class="col-lg-7 col-12 d-flex align-items-center justify-content-center justify-content-lg-end gap-3">
-      <form class="search-form" role="search">
-        <i class="bi bi-search search-icon"></i>
-        <input class="form-control rounded-pill ps-5" type="search" placeholder="Buscar...">
-      </form>
+      <div id="contenedorBusqueda" style="position:relative;">
+        <div class="search-form d-flex align-items-center">
+          <i class="bi bi-search search-icon"></i>
+          <input class="form-control rounded-pill ps-5" type="search" id="campoBusqueda" placeholder="Buscar..."
+            autocomplete="off">
+        </div>
+        <div id="sugerenciasBusqueda" class="busq-dropdown" style="display:none;"></div>
+      </div>
       <a href="contacto.html"
         class="btn btn-outline-success btn-institucional rounded-pill px-4 text-nowrap">CONTÁCTANOS</a>
     </div>
@@ -49,7 +52,6 @@
         <li class="nav-item"><a class="nav-link text-white fw-semibold" href="nosotros.html">NOSOTROS</a></li>
         <li class="nav-item"><a class="nav-link text-white fw-semibold" href="primaria.html">PRIMARIA</a></li>
         <li class="nav-item"><a class="nav-link text-white fw-semibold" href="secundaria.html">SECUNDARIA</a></li>
-        </li>
         <li class="nav-item"><a class="nav-link text-white fw-semibold" href="galeria.html">GALERÍA</a></li>
       </ul>
     </div>

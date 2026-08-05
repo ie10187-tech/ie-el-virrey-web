@@ -24,23 +24,8 @@
 
     <main>
 
-        <!-- Barra de alerta (reutilizable, controlada por fecha de vigencia) -->
-        <a href="reprogramacion.html" class="alerta-ticker-link" id="alertaTicker" data-vigencia="2026-08-31"
-            aria-label="Ver información sobre reprogramación de actividades">
-            <div class="alerta-ticker tipo-emergencia">
-                <span class="alerta-ticker-etiqueta"><i class="bi bi-exclamation-triangle-fill"></i> AVISO
-                    IMPORTANTE</span>
-                <div class="alerta-ticker-track">
-                    <div class="alerta-ticker-contenido">
-                        <span>Reprogramación y recalendarización de actividades escolares por Fenómeno El Niño — Conoce
-                            el nuevo cronograma aquí</span>
-                        <span>Reprogramación y recalendarización de actividades escolares por Fenómeno El Niño — Conoce
-                            el nuevo cronograma aquí</span>
-                    </div>
-                </div>
-                <span class="alerta-ticker-ver">Ver más <i class="bi bi-arrow-right"></i></span>
-            </div>
-        </a>
+        <!-- Barra de alerta — controlada desde data/alerta.json y CMS -->
+        <div id="alertaTickerContenedor"></div>
 
         <section class="hero-inicio fade-in">
             <div class="hero-imagen">
@@ -94,7 +79,7 @@
             </div>
         </section>
 
-        <!-- Logros Destacados (dinámico, ver js/logros-data.js) -->
+        <!-- Logros Destacados — dinámico desde data/logros.json -->
         <section class="container logros-section" id="logros-destacados">
             <div class="noticias-header">
                 <h2 class="noticias-titulo">LOGROS DESTACADOS</h2>
@@ -102,39 +87,16 @@
             <div class="row g-3" id="logrosGrid"></div>
         </section>
 
+        <!-- Vida Escolar — dinámico desde data/vida-escolar.json -->
         <section class="container galeria-section">
             <div class="d-flex justify-content-between align-items-center noticias-header">
                 <h2 class="noticias-titulo">VIDA ESCOLAR</h2>
                 <a href="galeria.html" class="ver-todas">VER GALERÍA <i class="bi bi-chevron-right"></i></a>
             </div>
-            <div class="row g-2">
-                <div class="col-6 col-md-3">
-                    <a href="galeria.html" class="galeria-item">
-                        <img src="img/deporte.jpg" alt="Actividades deportivas">
-                        <span class="galeria-overlay">Deportes</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="galeria.html" class="galeria-item">
-                        <img src="img/ciencias.jpg" alt="Laboratorio de ciencias">
-                        <span class="galeria-overlay">Ciencias y biología</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="galeria.html" class="galeria-item">
-                        <img src="img/cultura.jpg" alt="Actividades culturales">
-                        <span class="galeria-overlay">Cultura</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="galeria.html" class="galeria-item">
-                        <img src="img/patio.jpg" alt="Vida en el patio escolar">
-                        <span class="galeria-overlay">Patio y recreo</span>
-                    </a>
-                </div>
-            </div>
+            <div class="row g-2" id="vidaEscolarGrid"></div>
         </section>
 
+        <!-- Nuestros Niveles — estático -->
         <section class="container niveles-section">
             <div class="noticias-header">
                 <h2 class="noticias-titulo">NUESTROS NIVELES</h2>
@@ -167,25 +129,25 @@
             </div>
         </section>
 
-        <!-- Avisos y comunicados (dinámico, ver js/avisos-data.js) -->
+        <!-- Avisos y Comunicados — dinámico desde data/avisos.json -->
         <section class="container avisos-section">
             <div class="noticias-header">
                 <h2 class="noticias-titulo">AVISOS Y COMUNICADOS</h2>
             </div>
             <div class="row g-3" id="avisosGrid"></div>
         </section>
+
     </main>
 
     <div id="footer"></div>
 
-    <!-- Modal emergente: Reprogramación de actividades -->
-    <div class="modal fade" id="modalEmergencia" tabindex="-1" aria-labelledby="modalEmergenciaLabel" aria-hidden="true"
-        data-vigencia="2026-08-31">
+    <!-- Modal emergente — controlado desde data/alerta.json -->
+    <div class="modal fade" id="modalEmergencia" tabindex="-1" aria-labelledby="modalEmergenciaLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content modal-emergencia-content">
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                     aria-label="Cerrar"></button>
-
                 <div class="modal-emergencia-fondo">
                     <img src="img/cta-modal.png" alt="" class="modal-emergencia-imagen">
                     <div class="modal-emergencia-overlay"></div>
@@ -194,18 +156,35 @@
                         <h2 class="modal-emergencia-titulo">Reprogramación de Actividades Escolares</h2>
                     </div>
                 </div>
-
                 <div class="modal-body text-center">
                     <p class="modal-emergencia-texto">
                         Debido al Fenómeno El Niño, se han reprogramado diversas actividades del calendario
                         escolar. Conoce las disposiciones del MINEDU y el nuevo cronograma institucional.
                     </p>
-                    <a href="reprogramacion.html" class="btn btn-modal-emergencia rounded-pill px-4">
+                    <a href="aviso-institucional.html" class="btn btn-modal-emergencia rounded-pill px-4">
                         Ver información completa <i class="bi bi-arrow-right"></i>
                     </a>
                     <button type="button" class="modal-emergencia-cerrar" data-bs-dismiss="modal">
                         Cerrar y seguir navegando
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Avisos/Comunicados -->
+    <div class="modal fade" id="modalAviso" tabindex="-1" aria-labelledby="modalAvisoTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAvisoTitulo"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalAvisoTexto"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -217,9 +196,8 @@
     <script src="js/utilidades.js"></script>
     <script src="js/alerta-ticker.js"></script>
     <script src="js/modal-emergencia.js"></script>
-    <script src="js/logros-data.js"></script>
-    <script src="js/avisos-data.js"></script>
     <script src="js/inicio-dinamico.js"></script>
+    <script src="js/buscador.js"></script>
 </body>
 
 </html>

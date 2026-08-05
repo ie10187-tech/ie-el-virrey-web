@@ -1,0 +1,19 @@
+{
+  "logros": [
+    {
+      "icono": "bi-trophy-fill",
+      "titulo": "CAMPEONES DE FÚTBOL",
+      "texto": "Torneo interescolar 2024"
+    },
+    {
+      "icono": "bi-robot",
+      "titulo": "DESTACADA PARTICIPACIÓN EN ROBÓTICA",
+      "texto": "Competencia regional"
+    },
+    {
+      "icono": "bi-music-note-beamed",
+      "titulo": "TRIUNFO EN CONCURSO DE MARINERA",
+      "texto": "Festival cultural regional"
+    }
+  ]
+}

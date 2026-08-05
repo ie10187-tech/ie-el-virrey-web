@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "imagen": "img/deporte.jpg",
+            "alt": "Actividades deportivas",
+            "etiqueta": "Deportes"
+        },
+        {
+            "imagen": "img/ciencias.jpg",
+            "alt": "Laboratorio de ciencias",
+            "etiqueta": "Ciencias y biología"
+        },
+        {
+            "imagen": "img/cultura.jpg",
+            "alt": "Actividades culturales",
+            "etiqueta": "Cultura"
+        },
+        {
+            "imagen": "img/patio.jpg",
+            "alt": "Vida en el patio escolar",
+            "etiqueta": "Patio y recreo"
+        }
+    ]
+}

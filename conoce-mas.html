@@ -21,93 +21,28 @@
     <div id="header"></div>
 
     <main>
-        <!-- Hero -->
+
+        <!-- Hero corregido: colegio público, no privado -->
         <section class="hero-pagina fade-in text-center">
-            <h1 class="hero-titulo">CONOCE POR QUÉ SOMOS TU MEJOR OPCIÓN</h1>
+            <h1 class="hero-titulo">EDUCACIÓN PÚBLICA DE CALIDAD PARA OLMOS</h1>
+            <p class="hero-subtitulo">
+                I.E.P.S.M. N° 10187 "El Virrey" — Gratuita, inclusiva y comprometida con tu futuro
+            </p>
             <div class="hero-linea mx-auto"></div>
         </section>
 
-        <!-- Por qué elegirnos -->
+        <!-- Por qué elegirnos — dinámico desde data/conoce-mas.json -->
         <section class="container por-que-section">
             <h2 class="titulo-seccion">¿POR QUÉ ELEGIR "EL VIRREY"?</h2>
-            <div class="row g-3">
-                <div class="col-md-3 col-sm-6">
-                    <div class="razon-card hover-lift">
-                        <i class="bi bi-mortarboard-fill"></i>
-                        <h3 class="razon-titulo">Educación de calidad</h3>
-                        <p class="razon-texto">Formación académica sólida desde primaria hasta secundaria.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="razon-card hover-lift">
-                        <i class="bi bi-heart-fill"></i>
-                        <h3 class="razon-titulo">Formación en valores</h3>
-                        <p class="razon-texto">Respeto, responsabilidad y solidaridad en cada etapa del aprendizaje.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="razon-card hover-lift">
-                        <i class="bi bi-people-fill"></i>
-                        <h3 class="razon-titulo">Docentes comprometidos</h3>
-                        <p class="razon-texto">Un equipo cercano que acompaña a cada estudiante en su proceso.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="razon-card hover-lift">
-                        <i class="bi bi-buildings-fill"></i>
-                        <h3 class="razon-titulo">Infraestructura adecuada</h3>
-                        <p class="razon-texto">Aulas, biblioteca y espacios pensados para el aprendizaje.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="row g-3" id="razonesGrid"></div>
         </section>
 
-        <!-- Accesos rápidos -->
+        <!-- Accesos rápidos — dinámico desde data/conoce-mas.json -->
         <section class="container accesos-section">
             <h2 class="titulo-seccion">EXPLORA MÁS SOBRE NOSOTROS</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <a href="nosotros.html" class="acceso-card hover-lift">
-                        <img src="img/acceso-nosotros.png" alt="Nosotros">
-                        <div class="acceso-overlay">
-                            <h3 class="acceso-titulo">NOSOTROS</h3>
-                            <p class="acceso-texto">Historia, misión, visión y valores institucionales.</p>
-                            <span class="acceso-link">Conoce más <i class="bi bi-arrow-right"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="primaria.html" class="acceso-card hover-lift">
-                        <img src="img/acceso-primaria.png" alt="Primaria">
-                        <div class="acceso-overlay">
-                            <h3 class="acceso-titulo">PRIMARIA</h3>
-                            <p class="acceso-texto">Formación integral de 1° a 6° grado.</p>
-                            <span class="acceso-link">Conoce más <i class="bi bi-arrow-right"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="secundaria.html" class="acceso-card hover-lift">
-                        <img src="img/acceso-secundaria.png" alt="Secundaria">
-                        <div class="acceso-overlay">
-                            <h3 class="acceso-titulo">SECUNDARIA</h3>
-                            <p class="acceso-texto">Preparación académica de 1° a 5° de secundaria.</p>
-                            <span class="acceso-link">Conoce más <i class="bi bi-arrow-right"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="galeria.html" class="acceso-card hover-lift">
-                        <img src="img/acceso-galeria.png" alt="Galería">
-                        <div class="acceso-overlay">
-                            <h3 class="acceso-titulo">GALERÍA</h3>
-                            <p class="acceso-texto">Un vistazo a la vida escolar en nuestras instalaciones.</p>
-                            <span class="acceso-link">Conoce más <i class="bi bi-arrow-right"></i></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <div class="row g-4" id="accesosGrid"></div>
         </section>
+
     </main>
 
     <div id="footer"></div>
@@ -115,6 +50,8 @@
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/includes.js"></script>
+    <script src="js/conoce-mas-dinamico.js"></script>
+    <script src="js/buscador.js"></script>
 </body>
 
 </html>

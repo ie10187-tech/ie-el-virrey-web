@@ -257,6 +257,8 @@
     border-radius: var(--radius-sm);
     padding: 1.25rem;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .aviso-titulo {
@@ -269,5 +271,32 @@
 .aviso-texto {
     font-size: 0.85rem;
     color: #555;
-    margin-bottom: 0;
+    margin-bottom: 0.75rem;
+    flex: 1;
+}
+
+.aviso-ver-mas {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: color var(--transition-fast), gap var(--transition-fast);
+    text-decoration: none;
+    width: fit-content;
+    margin-top: auto;
+}
+
+.aviso-ver-mas:hover {
+    color: var(--color-primary-dark);
+    gap: 0.65rem;
+}
+
+.aviso-ver-mas i {
+    font-size: 0.85rem;
 }

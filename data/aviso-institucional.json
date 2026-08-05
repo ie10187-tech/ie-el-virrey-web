@@ -1,0 +1,56 @@
+{
+    "fecha_actualizacion": "30 de julio de 2026",
+    "referencia_oficio": "Oficio Múltiple N° 000252-2026-GR.LAMB/GRED/UGEL.LAMB",
+    "cronograma": [
+        {
+            "bloque": "Semana de Gestión",
+            "inicio": "27/07/2026",
+            "termino": "31/07/2026",
+            "semanas": "03 días",
+            "observacion": "Actividades de gestión institucional. Estudiantes en periodo vacacional."
+        },
+        {
+            "bloque": "III Bimestre",
+            "inicio": "03/08/2026",
+            "termino": "02/10/2026",
+            "semanas": "09 semanas",
+            "observacion": "Desarrollo continuo, sin semana de gestión intermedia."
+        },
+        {
+            "bloque": "IV Bimestre",
+            "inicio": "05/10/2026",
+            "termino": "04/12/2026",
+            "semanas": "09 semanas",
+            "observacion": "Desarrollo continuo. Culminación de actividades lectivas con estudiantes el 04/12/2026."
+        },
+        {
+            "bloque": "Semanas de Gestión (Reprogramadas)",
+            "inicio": "07/12/2026",
+            "termino": "31/12/2026",
+            "semanas": "03 semanas y 04 días",
+            "observacion": "Evaluación institucional, balance pedagógico, planificación y cierre del año escolar."
+        }
+    ],
+    "documentos": [
+        {
+            "titulo": "Resolución Gerencial Regional N° 001311-2026-GR.LAMB/GRED",
+            "fecha": "24 de julio de 2026",
+            "modal": "modalPdf1"
+        },
+        {
+            "titulo": "Directiva Regional - Fenómeno El Niño",
+            "fecha": "24 de julio de 2026",
+            "modal": "modalPdf2"
+        },
+        {
+            "titulo": "Hoja de Ruta - Implementación UGEL Lambayeque",
+            "fecha": "30 de julio de 2026",
+            "modal": "modalPdf3"
+        },
+        {
+            "titulo": "Oficio Múltiple N° 000252-2026 - Difusión",
+            "fecha": "30 de julio de 2026",
+            "modal": "modalPdf4"
+        }
+    ]
+}

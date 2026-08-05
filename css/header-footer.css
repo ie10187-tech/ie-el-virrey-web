@@ -181,3 +181,66 @@
     justify-content: center;
   }
 }
+
+/* ============================
+   Buscador con dropdown en tiempo real
+   ============================ */
+#contenedorBusqueda {
+  position: relative;
+  min-width: 220px;
+}
+
+.busq-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 1055;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.6rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.busq-item {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.88rem;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #f2f2f2;
+  transition: background 0.12s, color 0.12s;
+}
+
+.busq-item:last-child {
+  border-bottom: none;
+}
+
+.busq-item:hover,
+.busq-item-activo {
+  background: #f0f7f3;
+  color: var(--color-primary);
+}
+
+.busq-item mark {
+  background: #fff3cd;
+  color: inherit;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.busq-vacio {
+  color: #999;
+  font-style: italic;
+  cursor: default;
+  pointer-events: none;
+}
+
+.busq-vacio:hover {
+  background: transparent;
+  color: #999;
+}

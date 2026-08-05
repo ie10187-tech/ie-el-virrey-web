@@ -1,0 +1,10 @@
+{
+    "activa": true,
+    "tipo": "emergencia",
+    "etiqueta": "AVISO IMPORTANTE",
+    "icono": "bi-exclamation-triangle-fill",
+    "texto": "Reprogramación y recalendarización de actividades escolares por Fenómeno El Niño — Conoce el nuevo cronograma aquí",
+    "url_destino": "aviso-institucional.html",
+    "url_label": "Ver más",
+    "vigencia": "2026-08-31"
+}
