@@ -94,53 +94,12 @@
             </div>
         </section>
 
-        <section class="container noticias-section">
-            <div class="d-flex justify-content-between align-items-center noticias-header">
-                <h2 class="noticias-titulo">ÚLTIMAS NOTICIAS</h2>
-                <a href="noticias.html" class="ver-todas">VER TODAS <i class="bi bi-chevron-right"></i></a>
+        <!-- Logros Destacados (dinámico, ver js/logros-data.js) -->
+        <section class="container logros-section" id="logros-destacados">
+            <div class="noticias-header">
+                <h2 class="noticias-titulo">LOGROS DESTACADOS</h2>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <article class="noticia-card hover-lift">
-                        <img src="img/jornada.jpg" alt="Jornada de Arborización" class="noticia-img">
-                        <div class="noticia-body">
-                            <p class="noticia-fecha">15 MAYO, 2024</p>
-                            <h3 class="noticia-titulo-card">Jornada de Arborización</h3>
-                            <p class="noticia-texto">Nuestros estudiantes participaron activamente en la campaña por un
-                                entorno más verde.</p>
-                            <a href="noticia-detalle.html?id=jornada-arborizacion" class="noticia-link">LEER MÁS <i
-                                    class="bi bi-arrow-right"></i></a>
-
-                        </div>
-                    </article>
-                </div>
-                <div class="col-md-4">
-                    <article class="noticia-card hover-lift">
-                        <img src="img/taller.jpg" alt="Taller de Matemáticas" class="noticia-img">
-                        <div class="noticia-body">
-                            <p class="noticia-fecha">10 MAYO, 2024</p>
-                            <h3 class="noticia-titulo-card">Taller de Matemáticas</h3>
-                            <p class="noticia-texto">Actividades que fortalecen el pensamiento lógico y el trabajo en
-                                equipo.</p>
-                            <a href="noticia-detalle.html?id=taller-matematicas" class="noticia-link">LEER MÁS <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-md-4">
-                    <article class="noticia-card hover-lift">
-                        <img src="img/logros.jpg" alt="Orgullo Virreyano" class="noticia-img">
-                        <div class="noticia-body">
-                            <p class="noticia-fecha">08 MAYO, 2024</p>
-                            <h3 class="noticia-titulo-card">Orgullo Virreyano</h3>
-                            <p class="noticia-texto">Felicitamos a nuestros estudiantes por alcanzar importantes logros
-                                académicos y deportivos.</p>
-                            <a href="noticia-detalle.html?id=orgullo-virreyano" class="noticia-link">LEER MÁS <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-                </div>
-            </div>
+            <div class="row g-3" id="logrosGrid"></div>
         </section>
 
         <section class="container galeria-section">
@@ -207,33 +166,13 @@
                 </div>
             </div>
         </section>
-        <!-- Avisos y comunicados -->
+
+        <!-- Avisos y comunicados (dinámico, ver js/avisos-data.js) -->
         <section class="container avisos-section">
             <div class="noticias-header">
                 <h2 class="noticias-titulo">AVISOS Y COMUNICADOS</h2>
             </div>
-
-            <div class="row g-3">
-                <div class="col-md-4">
-                    <div class="aviso-card hover-lift">
-                        <h3 class="aviso-titulo">Proceso de Matrícula 2027</h3>
-                        <p class="aviso-texto">Inicio de matrícula para el nuevo año escolar, del 3 al 14 de marzo.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="aviso-card hover-lift">
-                        <h3 class="aviso-titulo">Suspensión de Clases</h3>
-                        <p class="aviso-texto">No habrá clases el día 12 de agosto por reunión de coordinación docente.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="aviso-card hover-lift">
-                        <h3 class="aviso-titulo">Pago de Pensiones</h3>
-                        <p class="aviso-texto">Recuerda que el pago mensual vence el día 5 de cada mes.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="row g-3" id="avisosGrid"></div>
         </section>
     </main>
 
@@ -278,6 +217,9 @@
     <script src="js/utilidades.js"></script>
     <script src="js/alerta-ticker.js"></script>
     <script src="js/modal-emergencia.js"></script>
+    <script src="js/logros-data.js"></script>
+    <script src="js/avisos-data.js"></script>
+    <script src="js/inicio-dinamico.js"></script>
 </body>
 
 </html>
