@@ -188,6 +188,19 @@ a {
     padding: 2rem 0;
 }
 
+.rounded-institucional {
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Imagen del hero lateral en Primaria/Secundaria: fuerza una proporción
+   consistente para que no se vea más alta que el bloque de texto de al lado */
+.imagen-hero-nivel {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
 /* ============================
    Tarjeta de equipo/staff (compartida)
    ============================ */

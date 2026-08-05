@@ -8,10 +8,7 @@
   margin-bottom: 1rem;
 }
 
-.rounded-institucional {
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-}
+
 
 /* ============================
    Secciones: espaciado general
