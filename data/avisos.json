@@ -1,19 +1,18 @@
 {
-    "avisos": [
-        {
-            "titulo": "Reprogramación de Actividades",
-            "texto": "Debido a las fuertes alertas generadas por el Fenómeno del Niño 2026, el cronograma de actividades queda reprogramado.",
-            "detalle": "Aquí va el texto completo del comunicado para el modal. Puede ser varios párrafos separados por salto de línea."
-        },
-        {
-            "titulo": "Inicio del Tercer Bimestre",
-            "texto": "Se comunica a toda la comunidad educativa que, de acuerdo a la RGR Nº 001311-2026-GR.LAMB/GRED, las clases correspondientes al III Bimestre inician el Lunes 03 de Agosto de 2026.",
-            "detalle": ""
-        },
-        {
-            "titulo": "Invitación: \"Lambayeque Celebra al Perú\"",
-            "texto": "Invitamos a los padres de familia y comunidad educativa con motivo de nuestras Fiestas Patrias. Los esperamos el jueves 23 de julio a las 9:00 AM.",
-            "detalle": ""
-        }
-    ]
+  "avisos": [
+    {
+      "titulo": "Reprogramación de Actividades",
+      "texto": "Debido a las fuertes alertas generadas por el Fenómeno del Niño 2026, el cronograma de actividades queda reprogramado.",
+      "detalle": "Aquí va el texto completo del comunicado para el modal. Puede ser varios párrafos separados por salto de línea."
+    },
+    {
+      "titulo": "Invitación: \"Lambayeque Celebra al Perú\"",
+      "texto": "Invitamos a los padres de familia y comunidad educativa con motivo de nuestras Fiestas Patrias. Los esperamos el jueves 23 de julio a las 9:00 AM.",
+      "detalle": ""
+    },
+    {
+      "titulo": "Inicio del Tercer Bimestre",
+      "texto": "El tercer bimestre iniciará el día lunes 03 de agosto"
+    }
+  ]
 }
