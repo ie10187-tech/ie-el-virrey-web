@@ -1,0 +1,197 @@
+{
+    "primaria": {
+        "comunicacion": {
+            "icono": "bi-translate",
+            "titulo": "Comunicación",
+            "grados": "1° a 6° grado",
+            "descripcion": [
+                "El área de Comunicación busca que nuestros estudiantes desarrollen sus competencias comunicativas de forma integral: leer, escribir, hablar y escuchar con propósito. A lo largo de los seis grados de Primaria, se fortalece la comprensión lectora, la producción de textos y la expresión oral, con especial énfasis en el gusto por la lectura desde los primeros grados.",
+                "Las actividades incluyen círculos de lectura, elaboración de cuentos e historietas, dramatizaciones y participación en concursos de oratoria y declamación a nivel institucional."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "matematica": {
+            "icono": "bi-calculator-fill",
+            "titulo": "Matemática",
+            "grados": "1° a 6° grado",
+            "descripcion": [
+                "En el área de Matemática buscamos que los estudiantes desarrollen el pensamiento lógico y la capacidad de resolver problemas de su vida cotidiana, a través del razonamiento numérico, geométrico y estadístico."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "personal-social": {
+            "icono": "bi-globe-americas",
+            "titulo": "Personal Social",
+            "grados": "1° a 6° grado",
+            "descripcion": [
+                "El área de Personal Social forma ciudadanos conscientes de su identidad, su entorno y su rol en la sociedad, promoviendo la convivencia democrática y el cuidado del bien común."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "ciencia-tecnologia": {
+            "icono": "bi-lightbulb",
+            "titulo": "Ciencia y Tecnología",
+            "grados": "1° a 6° grado",
+            "descripcion": [
+                "En Ciencia y Tecnología los estudiantes exploran el mundo natural y tecnológico a través de la observación, la experimentación y la indagación, despertando su curiosidad científica y su interés por la innovación."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "educacion-fisica": {
+            "icono": "bi-controller",
+            "titulo": "Educación Física",
+            "grados": "1° a 6° grado",
+            "descripcion": [
+                "El área de Educación Física promueve el desarrollo motor, la salud y el trabajo en equipo mediante el juego, el deporte y hábitos de vida activa."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "arte-cultura": {
+            "icono": "bi-palette-fill",
+            "titulo": "Arte y Cultura",
+            "grados": "1° a 6° grado",
+            "descripcion": [
+                "Arte y Cultura estimula la creatividad y la expresión personal de nuestros estudiantes a través de la música, el dibujo, la pintura y las manifestaciones culturales."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "tutoria": {
+            "icono": "bi-heart-pulse-fill",
+            "titulo": "Tutoría",
+            "grados": "1° a 6° grado",
+            "descripcion": [
+                "La Tutoría acompaña el desarrollo socioemocional de los estudiantes, brindando un espacio de escucha, orientación y fortalecimiento de habilidades para la vida."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "religion": {
+            "icono": "bi-book-half",
+            "titulo": "Religión",
+            "grados": "1° a 6° grado",
+            "descripcion": [
+                "El área de Religión promueve la formación en valores espirituales y éticos, fomentando el respeto por la diversidad de creencias dentro de nuestra comunidad."
+            ],
+            "galeria": [],
+            "pdfs": []
+        }
+    },
+    "secundaria": {
+        "comunicacion": {
+            "icono": "bi-translate",
+            "titulo": "Comunicación",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "En Secundaria, el área de Comunicación profundiza la comprensión y producción de textos complejos, la argumentación oral y escrita, y el gusto por la lectura crítica."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "matematica": {
+            "icono": "bi-calculator-fill",
+            "titulo": "Matemática",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "El área de Matemática en Secundaria fortalece el razonamiento lógico-matemático a través del álgebra, la geometría, la estadística y la resolución de problemas aplicados."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "ciencias-sociales": {
+            "icono": "bi-globe-americas",
+            "titulo": "Ciencias Sociales",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "Ciencias Sociales desarrolla en los estudiantes una comprensión crítica de la historia, la geografía y la realidad social, económica y política del país y el mundo."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "ciencia-tecnologia": {
+            "icono": "bi-lightbulb",
+            "titulo": "Ciencia y Tecnología",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "Ciencia y Tecnología impulsa la indagación científica y el pensamiento tecnológico, preparando a los estudiantes para comprender y transformar su entorno."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "educacion-fisica": {
+            "icono": "bi-controller",
+            "titulo": "Educación Física",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "Educación Física en Secundaria fortalece las capacidades físicas, el trabajo en equipo y hábitos saludables a través del deporte y la actividad física constante."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "arte-cultura": {
+            "icono": "bi-palette-fill",
+            "titulo": "Arte y Cultura",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "Arte y Cultura en Secundaria potencia la expresión artística y la apreciación cultural de los estudiantes a través de distintas disciplinas creativas."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "ingles": {
+            "icono": "bi-chat-square-text-fill",
+            "titulo": "Inglés",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "El área de Inglés desarrolla competencias comunicativas en un segundo idioma, preparando a los estudiantes para un mundo globalizado."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "educacion-trabajo": {
+            "icono": "bi-tools",
+            "titulo": "Educación para el Trabajo",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "Educación para el Trabajo brinda a los estudiantes competencias técnico-productivas y emprendedoras que los preparan para su futuro profesional y laboral."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "desarrollo-personal": {
+            "icono": "bi-people-fill",
+            "titulo": "Desarrollo Personal Ciudadanía y Cívica",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "Desarrollo Personal, Ciudadanía y Cívica promueve el autoconocimiento, la convivencia democrática y la participación ciudadana activa."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "religion": {
+            "icono": "bi-book-half",
+            "titulo": "Religión",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "El área de Religión en Secundaria profundiza en la formación de valores espirituales, éticos y morales para la vida."
+            ],
+            "galeria": [],
+            "pdfs": []
+        },
+        "tutoria": {
+            "icono": "bi-heart-pulse-fill",
+            "titulo": "Tutoría",
+            "grados": "1° a 5° grado",
+            "descripcion": [
+                "La Tutoría en Secundaria acompaña el desarrollo socioemocional, vocacional y personal de los estudiantes, brindando orientación constante."
+            ],
+            "galeria": [],
+            "pdfs": []
+        }
+    }
+}
