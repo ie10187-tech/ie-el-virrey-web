@@ -1,0 +1,15 @@
+{
+  "slug": "limpieza",
+  "label": "Jornadas de Limpieza",
+  "portada": "/img/uploads/limpieza-portal.jpg",
+  "fotos": [
+    {
+      "src": "/img/uploads/limpieza1.jpeg",
+      "caption": "Jornadas de Limpieza Institucional"
+    },
+    {
+      "src": "/img/uploads/limpieza2.jpeg",
+      "caption": "Prevención del fenómeno el niño"
+    }
+  ]
+}
