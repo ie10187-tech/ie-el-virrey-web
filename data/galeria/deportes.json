@@ -1,0 +1,31 @@
+{
+    "slug": "deportes",
+    "label": "Deportes",
+    "portada": "img/deporte.jpg",
+    "fotos": [
+        {
+            "src": "img/deporte.jpg",
+            "caption": "Actividades deportivas - Educación Física"
+        },
+        {
+            "src": "img/actividades-ginkana.jpg",
+            "caption": "Actividades de ginkana"
+        },
+        {
+            "src": "img/ginkana.jpg",
+            "caption": "Ginkana"
+        },
+        {
+            "src": "img/educacion-fisica.jpg",
+            "caption": "Educación física"
+        },
+        {
+            "src": "img/equipo-campeon-futbol.jpg",
+            "caption": "Equipo campeón de fútbol"
+        },
+        {
+            "src": "img/campeonato-futbol.jpg",
+            "caption": "Campeonato de fútbol"
+        }
+    ]
+}

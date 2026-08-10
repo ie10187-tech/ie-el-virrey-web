@@ -1,0 +1,11 @@
+{
+    "slug": "educacion-fisica",
+    "icono": "bi-controller",
+    "titulo": "Educación Física",
+    "grados": "1° a 6° grado",
+    "descripcion": [
+        "El área de Educación Física promueve el desarrollo motor, la salud y el trabajo en equipo mediante el juego, el deporte y hábitos de vida activa."
+    ],
+    "galeria": [],
+    "pdfs": []
+}

@@ -1,0 +1,11 @@
+{
+    "slug": "matematica",
+    "icono": "bi-calculator-fill",
+    "titulo": "Matemática",
+    "grados": "1° a 5° grado",
+    "descripcion": [
+        "El área de Matemática en Secundaria fortalece el razonamiento lógico-matemático a través del álgebra, la geometría, la estadística y la resolución de problemas aplicados."
+    ],
+    "galeria": [],
+    "pdfs": []
+}

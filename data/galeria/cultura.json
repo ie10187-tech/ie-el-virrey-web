@@ -1,0 +1,51 @@
+{
+    "slug": "cultura",
+    "label": "Cultura",
+    "portada": "img/cultura.jpg",
+    "fotos": [
+        {
+            "src": "img/cultura.jpg",
+            "caption": "Actividades culturales institucionales"
+        },
+        {
+            "src": "img/jayanca.jpeg",
+            "caption": "Jayanca"
+        },
+        {
+            "src": "img/marineramonsefu.jpeg",
+            "caption": "Marinera en Monsefú"
+        },
+        {
+            "src": "img/motupe.jpeg",
+            "caption": "Motupe"
+        },
+        {
+            "src": "img/marperuano.jpeg",
+            "caption": "Mar Peruano"
+        },
+        {
+            "src": "img/marinera2.jpeg",
+            "caption": "Presentación de Marinera"
+        },
+        {
+            "src": "img/lambayeque.jpeg",
+            "caption": "Lambayeque"
+        },
+        {
+            "src": "img/zaña.jpeg",
+            "caption": "Zaña"
+        },
+        {
+            "src": "img/marinera.jpeg",
+            "caption": "Marinera"
+        },
+        {
+            "src": "img/fiestaspatrias2.jpeg",
+            "caption": "Celebración de Fiestas Patrias"
+        },
+        {
+            "src": "img/fiestaspatrias.jpeg",
+            "caption": "Fiestas Patrias"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "slug": "robotica",
+    "label": "Talleres de Robótica",
+    "portada": "img/robotica.jpg",
+    "fotos": [
+        {
+            "src": "img/robotica1.jpeg",
+            "caption": "Actividades de robótica"
+        },
+        {
+            "src": "img/robotica2.jpg",
+            "caption": "Actividades de robótica"
+        },
+        {
+            "src": "img/robotica3.jpg",
+            "caption": "Actividades de robótica"
+        },
+        {
+            "src": "img/robotica4.jpg",
+            "caption": "Actividades de robótica"
+        }
+    ]
+}

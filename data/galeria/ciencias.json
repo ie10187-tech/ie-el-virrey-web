@@ -1,0 +1,27 @@
+{
+    "slug": "ciencias",
+    "label": "Ciencias",
+    "portada": "img/ciencias.jpg",
+    "fotos": [
+        {
+            "src": "img/ciencias.jpg",
+            "caption": "Actividades de ciencias y biología"
+        },
+        {
+            "src": "img/diadelatierra.jpg",
+            "caption": "Día de la Tierra"
+        },
+        {
+            "src": "img/reciclaje.jpg",
+            "caption": "Actividades de reciclaje"
+        },
+        {
+            "src": "img/reciclaje (2).jpg",
+            "caption": "Proyecto de reciclaje"
+        },
+        {
+            "src": "img/reciclaje-medioambiente.jpg",
+            "caption": "Cuidado del medio ambiente"
+        }
+    ]
+}

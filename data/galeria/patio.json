@@ -1,0 +1,31 @@
+{
+    "slug": "patio",
+    "label": "Actividades en el Patio y Áreas de Recreo",
+    "portada": "img/patio.jpg",
+    "fotos": [
+        {
+            "src": "img/patio.jpg",
+            "caption": "Patio y áreas de recreo"
+        },
+        {
+            "src": "img/origami.jpg",
+            "caption": "Origami"
+        },
+        {
+            "src": "img/planlector4.jpeg",
+            "caption": "Plan Lector"
+        },
+        {
+            "src": "img/planlector3.jpeg",
+            "caption": "Plan Lector"
+        },
+        {
+            "src": "img/planlector2.jpeg",
+            "caption": "Plan Lector"
+        },
+        {
+            "src": "img/planlector1.jpeg",
+            "caption": "Plan Lector"
+        }
+    ]
+}

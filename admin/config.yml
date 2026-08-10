@@ -251,776 +251,199 @@ collections:
                 widget: "list"
                 field: { name: "palabra", label: "Palabra clave", widget: "string" }
 
+# ─────────────────────────────────────────
+  # GALERÍA — orden de categorías
   # ─────────────────────────────────────────
-  # GALERÍA — Categorías y fotos
-  # ─────────────────────────────────────────
-  - name: "galeria"
-    label: "🖼️ Galería — Categorías y fotos"
+  - name: "galeria_index"
+    label: "🖼️ Galería — Orden de categorías"
     files:
-      - name: "deportes"
-        label: "Categoría: Deportes"
-        file: "data/galeria.json"
+      - name: "indice"
+        label: "Orden en que aparecen las categorías"
+        file: "data/galeria-index.json"
         fields:
           - name: "categorias"
-            label: "Categorías"
-            widget: "object"
-            fields:
-              - name: "deportes"
-                label: "Deportes"
-                widget: "object"
-                fields:
-                  - { name: "label", label: "Nombre visible de la categoría", widget: "string" }
-                  - { name: "portada", label: "Foto de portada", widget: "image" }
-                  - name: "fotos"
-                    label: "Fotos"
-                    widget: "list"
-                    summary: "{{fields.caption}}"
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "caption", label: "Descripción de la foto", widget: "string" }
-      - name: "ciencias"
-        label: "Categoría: Ciencias"
-        file: "data/galeria.json"
-        fields:
-          - name: "categorias"
-            label: "Categorías"
-            widget: "object"
-            fields:
-              - name: "ciencias"
-                label: "Ciencias"
-                widget: "object"
-                fields:
-                  - { name: "label", label: "Nombre visible de la categoría", widget: "string" }
-                  - { name: "portada", label: "Foto de portada", widget: "image" }
-                  - name: "fotos"
-                    label: "Fotos"
-                    widget: "list"
-                    summary: "{{fields.caption}}"
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "caption", label: "Descripción de la foto", widget: "string" }
-      - name: "cultura"
-        label: "Categoría: Cultura"
-        file: "data/galeria.json"
-        fields:
-          - name: "categorias"
-            label: "Categorías"
-            widget: "object"
-            fields:
-              - name: "cultura"
-                label: "Cultura"
-                widget: "object"
-                fields:
-                  - { name: "label", label: "Nombre visible de la categoría", widget: "string" }
-                  - { name: "portada", label: "Foto de portada", widget: "image" }
-                  - name: "fotos"
-                    label: "Fotos"
-                    widget: "list"
-                    summary: "{{fields.caption}}"
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "caption", label: "Descripción de la foto", widget: "string" }
-      - name: "patio"
-        label: "Categoría: Patio y Recreo"
-        file: "data/galeria.json"
-        fields:
-          - name: "categorias"
-            label: "Categorías"
-            widget: "object"
-            fields:
-              - name: "patio"
-                label: "Patio y Recreo"
-                widget: "object"
-                fields:
-                  - { name: "label", label: "Nombre visible de la categoría", widget: "string" }
-                  - { name: "portada", label: "Foto de portada", widget: "image" }
-                  - name: "fotos"
-                    label: "Fotos"
-                    widget: "list"
-                    summary: "{{fields.caption}}"
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "caption", label: "Descripción de la foto", widget: "string" }
-      - name: "robotica"
-        label: "Categoría: Robótica"
-        file: "data/galeria.json"
-        fields:
-          - name: "categorias"
-            label: "Categorías"
-            widget: "object"
-            fields:
-              - name: "robotica"
-                label: "Robótica"
-                widget: "object"
-                fields:
-                  - { name: "label", label: "Nombre visible de la categoría", widget: "string" }
-                  - { name: "portada", label: "Foto de portada", widget: "image" }
-                  - name: "fotos"
-                    label: "Fotos"
-                    widget: "list"
-                    summary: "{{fields.caption}}"
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "caption", label: "Descripción de la foto", widget: "string" }
-      - name: "eventos"
-        label: "Categoría: Eventos"
-        file: "data/galeria.json"
-        fields:
-          - name: "categorias"
-            label: "Categorías"
-            widget: "object"
-            fields:
-              - name: "eventos"
-                label: "Eventos"
-                widget: "object"
-                fields:
-                  - { name: "label", label: "Nombre visible de la categoría", widget: "string" }
-                  - { name: "portada", label: "Foto de portada", widget: "image" }
-                  - name: "fotos"
-                    label: "Fotos"
-                    widget: "list"
-                    summary: "{{fields.caption}}"
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "caption", label: "Descripción de la foto", widget: "string" }
+            label: "Slugs en orden de aparición (deben coincidir con el nombre del archivo)"
+            widget: "list"
+            field: { name: "slug", label: "Slug de la categoría", widget: "string" }
 
   # ─────────────────────────────────────────
-  # CURSOS — PRIMARIA
+  # GALERÍA — categorías individuales
+  # ─────────────────────────────────────────
+  - name: "galeria_categorias"
+    label: "🖼️ Galería — Categorías y fotos"
+    folder: "data/galeria"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "label"
+    summary: "{{label}} ({{fields.fotos}} fotos)"
+    fields:
+      - { name: "slug", label: "Slug único (sin espacios, ej: deportes) — no repetir", widget: "string" }
+      - { name: "label", label: "Nombre de la categoría (ej: Deportes)", widget: "string" }
+      - { name: "portada", label: "Foto de portada (la que se ve en la grilla)", widget: "image" }
+      - name: "fotos"
+        label: "Fotos del carrusel"
+        widget: "list"
+        summary: "{{fields.caption}}"
+        fields:
+          - { name: "src", label: "Foto", widget: "image" }
+          - { name: "caption", label: "Descripción de la foto", widget: "string" }
+
+  # ─────────────────────────────────────────
+  # CURSOS — tarjetas visibles en primaria.html / secundaria.html
+  # ─────────────────────────────────────────
+  - name: "cursos_indices"
+    label: "📚 Cursos — Áreas en portada de nivel"
+    files:
+      - name: "primaria_index"
+        label: "Áreas curriculares — Primaria"
+        file: "data/cursos-primaria-index.json"
+        fields:
+          - name: "areas"
+            label: "Áreas (deben coincidir con el slug del archivo del curso)"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: "slug", label: "Slug (ej: comunicacion)", widget: "string" }
+              - name: "icono"
+                label: "Ícono"
+                widget: "select"
+                options:
+                  - { label: "📝 Comunicación", value: "bi-translate" }
+                  - { label: "🔢 Matemática", value: "bi-calculator-fill" }
+                  - { label: "🌎 Social / Geografía", value: "bi-globe-americas" }
+                  - { label: "💡 Ciencia y Tecnología", value: "bi-lightbulb" }
+                  - { label: "🏃 Educación Física", value: "bi-controller" }
+                  - { label: "🎨 Arte y Cultura", value: "bi-palette-fill" }
+                  - { label: "❤️ Tutoría", value: "bi-heart-pulse-fill" }
+                  - { label: "📖 Religión", value: "bi-book-half" }
+                  - { label: "💬 Inglés", value: "bi-chat-square-text-fill" }
+                  - { label: "🔧 Educación para el Trabajo", value: "bi-tools" }
+                  - { label: "👥 Desarrollo Personal", value: "bi-people-fill" }
+              - { name: "titulo", label: "Nombre del área (ej: Comunicación)", widget: "string" }
+      - name: "secundaria_index"
+        label: "Áreas curriculares — Secundaria"
+        file: "data/cursos-secundaria-index.json"
+        fields:
+          - name: "areas"
+            label: "Áreas (deben coincidir con el slug del archivo del curso)"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: "slug", label: "Slug (ej: comunicacion)", widget: "string" }
+              - name: "icono"
+                label: "Ícono"
+                widget: "select"
+                options:
+                  - { label: "📝 Comunicación", value: "bi-translate" }
+                  - { label: "🔢 Matemática", value: "bi-calculator-fill" }
+                  - { label: "🌎 Social / Geografía", value: "bi-globe-americas" }
+                  - { label: "💡 Ciencia y Tecnología", value: "bi-lightbulb" }
+                  - { label: "🏃 Educación Física", value: "bi-controller" }
+                  - { label: "🎨 Arte y Cultura", value: "bi-palette-fill" }
+                  - { label: "❤️ Tutoría", value: "bi-heart-pulse-fill" }
+                  - { label: "📖 Religión", value: "bi-book-half" }
+                  - { label: "💬 Inglés", value: "bi-chat-square-text-fill" }
+                  - { label: "🔧 Educación para el Trabajo", value: "bi-tools" }
+                  - { label: "👥 Desarrollo Personal", value: "bi-people-fill" }
+              - { name: "titulo", label: "Nombre del área (ej: Comunicación)", widget: "string" }
+
+  # ─────────────────────────────────────────
+  # CURSOS — contenido individual primaria
   # ─────────────────────────────────────────
   - name: "cursos_primaria"
     label: "📚 Cursos — Primaria"
-    files:
-      - name: "comunicacion_p"
-        label: "Comunicación"
-        file: "data/cursos.json"
+    folder: "data/cursos-primaria"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "titulo"
+    summary: "{{titulo}} · {{grados}}"
+    fields:
+      - { name: "slug", label: "Slug único (sin espacios, ej: comunicacion) — no repetir", widget: "string" }
+      - { name: "titulo", label: "Nombre del área (ej: Comunicación)", widget: "string" }
+      - { name: "grados", label: "Grados (ej: 1° a 6° grado)", widget: "string" }
+      - name: "icono"
+        label: "Ícono"
+        widget: "select"
+        options:
+          - { label: "📝 Comunicación", value: "bi-translate" }
+          - { label: "🔢 Matemática", value: "bi-calculator-fill" }
+          - { label: "🌎 Social / Geografía", value: "bi-globe-americas" }
+          - { label: "💡 Ciencia y Tecnología", value: "bi-lightbulb" }
+          - { label: "🏃 Educación Física", value: "bi-controller" }
+          - { label: "🎨 Arte y Cultura", value: "bi-palette-fill" }
+          - { label: "❤️ Tutoría", value: "bi-heart-pulse-fill" }
+          - { label: "📖 Religión", value: "bi-book-half" }
+          - { label: "💬 Inglés", value: "bi-chat-square-text-fill" }
+          - { label: "🔧 Educación para el Trabajo", value: "bi-tools" }
+          - { label: "👥 Desarrollo Personal", value: "bi-people-fill" }
+      - name: "descripcion"
+        label: "Párrafos de descripción"
+        widget: "list"
+        field: { name: "parrafo", label: "Párrafo", widget: "text" }
+      - name: "galeria"
+        label: "Galería de fotos del área (opcional)"
+        widget: "list"
+        required: false
         fields:
-          - name: "primaria"
-            label: "Primaria"
-            widget: "object"
-            fields:
-              - name: "comunicacion"
-                label: "Comunicación"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados (ej: 1° a 6° grado)", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "matematica_p"
-        label: "Matemática"
-        file: "data/cursos.json"
+          - { name: "src", label: "Foto", widget: "image" }
+          - { name: "alt", label: "Descripción de la foto", widget: "string" }
+      - name: "pdfs"
+        label: "Documentos PDF del área (opcional)"
+        widget: "list"
+        required: false
         fields:
-          - name: "primaria"
-            label: "Primaria"
-            widget: "object"
-            fields:
-              - name: "matematica"
-                label: "Matemática"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "personal_social_p"
-        label: "Personal Social"
-        file: "data/cursos.json"
-        fields:
-          - name: "primaria"
-            label: "Primaria"
-            widget: "object"
-            fields:
-              - name: "personal-social"
-                label: "Personal Social"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "ciencia_tecnologia_p"
-        label: "Ciencia y Tecnología"
-        file: "data/cursos.json"
-        fields:
-          - name: "primaria"
-            label: "Primaria"
-            widget: "object"
-            fields:
-              - name: "ciencia-tecnologia"
-                label: "Ciencia y Tecnología"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "educacion_fisica_p"
-        label: "Educación Física"
-        file: "data/cursos.json"
-        fields:
-          - name: "primaria"
-            label: "Primaria"
-            widget: "object"
-            fields:
-              - name: "educacion-fisica"
-                label: "Educación Física"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "arte_cultura_p"
-        label: "Arte y Cultura"
-        file: "data/cursos.json"
-        fields:
-          - name: "primaria"
-            label: "Primaria"
-            widget: "object"
-            fields:
-              - name: "arte-cultura"
-                label: "Arte y Cultura"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "tutoria_p"
-        label: "Tutoría"
-        file: "data/cursos.json"
-        fields:
-          - name: "primaria"
-            label: "Primaria"
-            widget: "object"
-            fields:
-              - name: "tutoria"
-                label: "Tutoría"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "religion_p"
-        label: "Religión"
-        file: "data/cursos.json"
-        fields:
-          - name: "primaria"
-            label: "Primaria"
-            widget: "object"
-            fields:
-              - name: "religion"
-                label: "Religión"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
+          - { name: "titulo", label: "Título del documento", widget: "string" }
+          - { name: "fecha", label: "Fecha de publicación", widget: "string" }
+          - { name: "archivo", label: "Archivo PDF", widget: "file" }
 
   # ─────────────────────────────────────────
-  # CURSOS — SECUNDARIA
+  # CURSOS — contenido individual secundaria
   # ─────────────────────────────────────────
   - name: "cursos_secundaria"
     label: "📚 Cursos — Secundaria"
-    files:
-      - name: "comunicacion_s"
-        label: "Comunicación"
-        file: "data/cursos.json"
+    folder: "data/cursos-secundaria"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "titulo"
+    summary: "{{titulo}} · {{grados}}"
+    fields:
+      - { name: "slug", label: "Slug único (sin espacios, ej: matematica) — no repetir", widget: "string" }
+      - { name: "titulo", label: "Nombre del área (ej: Matemática)", widget: "string" }
+      - { name: "grados", label: "Grados (ej: 1° a 5° grado)", widget: "string" }
+      - name: "icono"
+        label: "Ícono"
+        widget: "select"
+        options:
+          - { label: "📝 Comunicación", value: "bi-translate" }
+          - { label: "🔢 Matemática", value: "bi-calculator-fill" }
+          - { label: "🌎 Social / Geografía", value: "bi-globe-americas" }
+          - { label: "💡 Ciencia y Tecnología", value: "bi-lightbulb" }
+          - { label: "🏃 Educación Física", value: "bi-controller" }
+          - { label: "🎨 Arte y Cultura", value: "bi-palette-fill" }
+          - { label: "❤️ Tutoría", value: "bi-heart-pulse-fill" }
+          - { label: "📖 Religión", value: "bi-book-half" }
+          - { label: "💬 Inglés", value: "bi-chat-square-text-fill" }
+          - { label: "🔧 Educación para el Trabajo", value: "bi-tools" }
+          - { label: "👥 Desarrollo Personal", value: "bi-people-fill" }
+      - name: "descripcion"
+        label: "Párrafos de descripción"
+        widget: "list"
+        field: { name: "parrafo", label: "Párrafo", widget: "text" }
+      - name: "galeria"
+        label: "Galería de fotos del área (opcional)"
+        widget: "list"
+        required: false
         fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "comunicacion"
-                label: "Comunicación"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados (ej: 1° a 5° grado)", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "matematica_s"
-        label: "Matemática"
-        file: "data/cursos.json"
+          - { name: "src", label: "Foto", widget: "image" }
+          - { name: "alt", label: "Descripción de la foto", widget: "string" }
+      - name: "pdfs"
+        label: "Documentos PDF del área (opcional)"
+        widget: "list"
+        required: false
         fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "matematica"
-                label: "Matemática"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "ciencias_sociales_s"
-        label: "Ciencias Sociales"
-        file: "data/cursos.json"
-        fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "ciencias-sociales"
-                label: "Ciencias Sociales"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "ciencia_tecnologia_s"
-        label: "Ciencia y Tecnología"
-        file: "data/cursos.json"
-        fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "ciencia-tecnologia"
-                label: "Ciencia y Tecnología"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "educacion_fisica_s"
-        label: "Educación Física"
-        file: "data/cursos.json"
-        fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "educacion-fisica"
-                label: "Educación Física"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "arte_cultura_s"
-        label: "Arte y Cultura"
-        file: "data/cursos.json"
-        fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "arte-cultura"
-                label: "Arte y Cultura"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "ingles_s"
-        label: "Inglés"
-        file: "data/cursos.json"
-        fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "ingles"
-                label: "Inglés"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "educacion_trabajo_s"
-        label: "Educación para el Trabajo"
-        file: "data/cursos.json"
-        fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "educacion-trabajo"
-                label: "Educación para el Trabajo"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "desarrollo_personal_s"
-        label: "Desarrollo Personal Ciudadanía y Cívica"
-        file: "data/cursos.json"
-        fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "desarrollo-personal"
-                label: "Desarrollo Personal Ciudadanía y Cívica"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "religion_s"
-        label: "Religión"
-        file: "data/cursos.json"
-        fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "religion"
-                label: "Religión"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
-      - name: "tutoria_s"
-        label: "Tutoría"
-        file: "data/cursos.json"
-        fields:
-          - name: "secundaria"
-            label: "Secundaria"
-            widget: "object"
-            fields:
-              - name: "tutoria"
-                label: "Tutoría"
-                widget: "object"
-                fields:
-                  - { name: "titulo", label: "Título del área", widget: "string" }
-                  - { name: "grados", label: "Grados", widget: "string" }
-                  - name: "descripcion"
-                    label: "Párrafos de descripción"
-                    widget: "list"
-                    field: { name: "parrafo", label: "Párrafo", widget: "text" }
-                  - name: "galeria"
-                    label: "Galería de fotos (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "src", label: "Foto", widget: "image" }
-                      - { name: "alt", label: "Descripción", widget: "string" }
-                  - name: "pdfs"
-                    label: "Documentos PDF (opcional)"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "titulo", label: "Título del documento", widget: "string" }
-                      - { name: "fecha", label: "Fecha de publicación", widget: "string" }
-                      - { name: "archivo", label: "Archivo PDF", widget: "file" }
+          - { name: "titulo", label: "Título del documento", widget: "string" }
+          - { name: "fecha", label: "Fecha de publicación", widget: "string" }
+          - { name: "archivo", label: "Archivo PDF", widget: "file" }

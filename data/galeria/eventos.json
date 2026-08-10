@@ -1,0 +1,31 @@
+{
+    "slug": "eventos",
+    "label": "Eventos",
+    "portada": "img/eventos.jpg",
+    "fotos": [
+        {
+            "src": "img/eventos.jpg",
+            "caption": "Feliz Aniversario"
+        },
+        {
+            "src": "img/formacion.jpg",
+            "caption": "Formación"
+        },
+        {
+            "src": "img/aniversario.jpg",
+            "caption": "Aniversario"
+        },
+        {
+            "src": "img/apertura-año-escolar.jpg",
+            "caption": "Apertura del año escolar"
+        },
+        {
+            "src": "img/donaciones-mochilas.jpg",
+            "caption": "Donaciones de mochilas"
+        },
+        {
+            "src": "img/reinado.jpg",
+            "caption": "Reinado"
+        }
+    ]
+}
