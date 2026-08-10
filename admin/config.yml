@@ -251,7 +251,7 @@ collections:
                 widget: "list"
                 field: { name: "palabra", label: "Palabra clave", widget: "string" }
 
-# ─────────────────────────────────────────
+  # ─────────────────────────────────────────
   # GALERÍA — orden de categorías
   # ─────────────────────────────────────────
   - name: "galeria_index"
@@ -274,6 +274,8 @@ collections:
     folder: "data/galeria"
     create: true
     delete: true
+    extension: "json"
+    format: "json"
     slug: "{{slug}}"
     identifier_field: "label"
     summary: "{{label}} ({{fields.fotos}} fotos)"
@@ -356,6 +358,8 @@ collections:
     folder: "data/cursos-primaria"
     create: true
     delete: true
+    extension: "json"
+    format: "json"
     slug: "{{slug}}"
     identifier_field: "titulo"
     summary: "{{titulo}} · {{grados}}"
@@ -406,6 +410,8 @@ collections:
     folder: "data/cursos-secundaria"
     create: true
     delete: true
+    extension: "json"
+    format: "json"
     slug: "{{slug}}"
     identifier_field: "titulo"
     summary: "{{titulo}} · {{grados}}"
