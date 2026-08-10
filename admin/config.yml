@@ -276,11 +276,11 @@ collections:
     delete: true
     extension: "json"
     format: "json"
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     identifier_field: "label"
     summary: "{{label}} ({{fields.fotos}} fotos)"
     fields:
-      - { name: "slug", label: "Slug único (sin espacios, ej: deportes) — no repetir", widget: "string" }
+      - { name: "slug", label: "Slug único (sin espacios, ej: deportes) — no repetir. Llénalo primero, antes que el nombre.", widget: "string" }
       - { name: "label", label: "Nombre de la categoría (ej: Deportes)", widget: "string" }
       - { name: "portada", label: "Foto de portada (la que se ve en la grilla)", widget: "image" }
       - name: "fotos"
@@ -360,11 +360,11 @@ collections:
     delete: true
     extension: "json"
     format: "json"
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     identifier_field: "titulo"
     summary: "{{titulo}} · {{grados}}"
     fields:
-      - { name: "slug", label: "Slug único (sin espacios, ej: comunicacion) — no repetir", widget: "string" }
+      - { name: "slug", label: "Slug único (sin espacios, ej: comunicacion) — no repetir. Llénalo primero, antes que el nombre.", widget: "string" }
       - { name: "titulo", label: "Nombre del área (ej: Comunicación)", widget: "string" }
       - { name: "grados", label: "Grados (ej: 1° a 6° grado)", widget: "string" }
       - name: "icono"
@@ -412,11 +412,11 @@ collections:
     delete: true
     extension: "json"
     format: "json"
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     identifier_field: "titulo"
     summary: "{{titulo}} · {{grados}}"
     fields:
-      - { name: "slug", label: "Slug único (sin espacios, ej: matematica) — no repetir", widget: "string" }
+      - { name: "slug", label: "Slug único (sin espacios, ej: matematica) — no repetir. Llénalo primero, antes que el nombre.", widget: "string" }
       - { name: "titulo", label: "Nombre del área (ej: Matemática)", widget: "string" }
       - { name: "grados", label: "Grados (ej: 1° a 5° grado)", widget: "string" }
       - name: "icono"
@@ -453,7 +453,8 @@ collections:
           - { name: "titulo", label: "Título del documento", widget: "string" }
           - { name: "fecha", label: "Fecha de publicación", widget: "string" }
           - { name: "archivo", label: "Archivo PDF", widget: "file" }
-# ─────────────────────────────────────────
+
+  # ─────────────────────────────────────────
   # DOCENTES, HORARIO Y CLASSROOM
   # ─────────────────────────────────────────
   - name: "plantel_niveles"
@@ -595,7 +596,7 @@ collections:
               - { name: "pregunta", label: "Pregunta", widget: "string" }
               - { name: "respuesta", label: "Respuesta", widget: "text" }
 
-# ─────────────────────────────────────────
+  # ─────────────────────────────────────────
   # PORTADA — HERO Y VALORES
   # ─────────────────────────────────────────
   - name: "inicio_hero"
