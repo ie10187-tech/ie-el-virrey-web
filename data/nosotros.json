@@ -1,0 +1,67 @@
+{
+    "quienes_somos": [
+        "La I.E.P.S.M. N° 10187 \"El Virrey\" es una institución educativa de los niveles Primaria y Secundaria, ubicada en el Distrito de Olmos, región Lambayeque. Somos una institución que asume la responsabilidad de formar seres humanos capaces de enfrentar los retos de un mundo que cambia incesantemente.",
+        "Para lograrlo, brindamos una formación integral en espacios seguros e inclusivos, fomentando una sana convivencia libre de discriminación y violencia. A través de una propuesta pedagógica abierta, flexible, integradora y diversificada, buscamos consolidarnos para el año 2027 como la mejor Institución Educativa del distrito.",
+        "Trabajamos con sólidos valores éticos para ser una escuela de calidad y eco eficiente, ejecutando proyectos innovadores e integrando tecnologías que permitan a nuestros estudiantes desenvolverse con éxito en la sociedad de cambios."
+    ],
+    "historia": [
+        "Fundada al servicio de la comunidad de Olmos, la Institución Educativa N° 10187 \"El Virrey\" nació con el propósito de acercar educación de calidad a las familias de la zona. A lo largo de los años, hemos crecido junto a nuestra comunidad, ampliando nuestra infraestructura y fortaleciendo nuestro proyecto educativo.",
+        "Hoy, \"El Virrey\" es reconocido en Olmos por su compromiso con la formación en valores y la excelencia académica, siendo la lema institucional: \"Hoy, mañana y siempre\"."
+    ],
+    "mision": "Somos una Institución, que asume la responsabilidad de formar seres humanos capaces de enfrentar los retos de un mundo que cambia incesantemente, brindando para ello en una formación integral espacios seguros e inclusivos, con una sana convivencia, libres de discriminación y violencia.",
+    "vision": "La Institución Educativa 10187 \"EL VIRREY\", aspira al año 2027 ser la mejor Institución Educativa del Distrito de Olmos en la región Lambayeque en los niveles Primaria y Secundaria a través de una propuesta pedagógica abierta, flexible, integradora y diversificada con valores éticos, una escuela de calidad y eco eficiente que ejecuta proyectos innovadores, integrando tecnologías que le permitan desenvolverse en la sociedad de cambios.",
+    "valores": [
+        {
+            "icono": "bi-heart-fill",
+            "titulo": "Respeto"
+        },
+        {
+            "icono": "bi-shield-check",
+            "titulo": "Responsabilidad"
+        },
+        {
+            "icono": "bi-people-fill",
+            "titulo": "Solidaridad"
+        },
+        {
+            "icono": "bi-award-fill",
+            "titulo": "Excelencia"
+        }
+    ],
+    "equipo_directivo": [
+        {
+            "nombre": "José Abel Quintana Castro",
+            "cargo": "Director"
+        }
+    ],
+    "equipo_administrativo": [
+        {
+            "nombre": "Victor Tineo Martin",
+            "cargo": "Administrativo"
+        }
+    ],
+    "escudo_significado": [
+        {
+            "titulo": "La antorcha",
+            "texto": "representa la luz del conocimiento que guía a nuestros estudiantes."
+        },
+        {
+            "titulo": "Los árboles",
+            "texto": "simbolizan el crecimiento y arraigo de nuestra comunidad educativa."
+        },
+        {
+            "titulo": "El sol y las montañas",
+            "texto": "representan a Olmos y el nuevo amanecer que cada generación de estudiantes trae consigo."
+        },
+        {
+            "titulo": "El lema \"Estudio, Dedicación y Servicio\"",
+            "texto": "resume los valores que formamos en cada estudiante."
+        },
+        {
+            "titulo": "\"Hoy, mañana y siempre\"",
+            "texto": "refleja nuestro compromiso permanente con la educación de Olmos."
+        }
+    ],
+    "uniforme_diario_texto": "Camisa con logo institucional y pantalón/falda azul marino, de uso obligatorio en clases regulares.",
+    "uniforme_fisica_texto": "Buzo oficial institucional, de uso exclusivo en las clases de Educación Física y actividades deportivas."
+}

@@ -1,0 +1,29 @@
+{
+    "preguntas": [
+        {
+            "categoria": "admision",
+            "pregunta": "¿Cuándo inicia el proceso de matrícula para el próximo año escolar?",
+            "respuesta": "Las fechas de matrícula se rigen por el calendario escolar oficial establecido por el Ministerio de Educación (MINEDU) para instituciones educativas públicas. Publicaremos las fechas exactas en la sección de Noticias y Comunicados apenas sean confirmadas por la UGEL correspondiente."
+        },
+        {
+            "categoria": "general",
+            "pregunta": "¿A qué UGEL pertenece la institución?",
+            "respuesta": "La I.E.P.S.M. N° 10187 \"El Virrey\" pertenece a la UGEL Lambayeque, bajo la Dirección Regional de Educación de Lambayeque (DRE Lambayeque)."
+        },
+        {
+            "categoria": "admision",
+            "pregunta": "¿Cómo se asignan las vacantes disponibles?",
+            "respuesta": "Al ser una institución educativa pública, las vacantes se gestionan a través de la plataforma SIAGIE del Ministerio de Educación, conforme a los criterios de priorización establecidos por la UGEL Lambayeque (cercanía al domicilio, hermanos ya matriculados, entre otros). Para consultas específicas sobre disponibilidad, puedes acercarte a secretaría."
+        },
+        {
+            "categoria": "general",
+            "pregunta": "¿Cuál es el uniforme oficial del colegio?",
+            "respuesta": "Puedes ver el detalle completo del uniforme de Primaria y Secundaria en la sección \"Nosotros\" de nuestro sitio web, en el apartado de Uniforme Escolar."
+        },
+        {
+            "categoria": "general",
+            "pregunta": "¿Cómo puedo comunicarme con un docente específico?",
+            "respuesta": "Puedes acercarte a secretaría o comunicarte por nuestro formulario de contacto, indicando el nombre del docente y el motivo de tu consulta, para que te orienten sobre la mejor forma de comunicación."
+        }
+    ]
+}

@@ -37,7 +37,8 @@
 
         <!-- Cinta de categorías -->
         <section class="container filtros-section">
-            <div class="filtros-cinta" data-items=".faq-item" data-vacio="#sinResultadosFaq" data-buscador="#buscadorFaq">
+            <div class="filtros-cinta" data-items=".faq-item" data-vacio="#sinResultadosFaq"
+                data-buscador="#buscadorFaq">
                 <button class="filtro-chip active" data-filtro="todas">Todas</button>
                 <button class="filtro-chip" data-filtro="admision">Admisión y Matrícula</button>
                 <button class="filtro-chip" data-filtro="academico">Académico</button>
@@ -46,104 +47,9 @@
             </div>
         </section>
 
-        <!-- Acordeón de preguntas -->
+        <!-- Acordeón de preguntas — dinámico desde data/faq.json -->
         <section class="container faq-contenido-section">
-            <div class="accordion" id="acordeonFaq">
-                <div class="faq-item" data-categoria="admision">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq2">
-                                ¿Cuándo inicia el proceso de matrícula para el próximo año escolar?
-                            </button>
-                        </h2>
-                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#acordeonFaq">
-                            <div class="accordion-body">
-                                Las fechas de matrícula se rigen por el calendario escolar oficial establecido por el
-                                Ministerio
-                                de Educación (MINEDU) para instituciones educativas públicas. Publicaremos las fechas
-                                exactas en
-                                la sección de Noticias y Comunicados apenas sean confirmadas por la UGEL
-                                correspondiente.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item" data-categoria="general">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq11">
-                                ¿A qué UGEL pertenece la institución?
-                            </button>
-                        </h2>
-                        <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#acordeonFaq">
-                            <div class="accordion-body">
-                                La I.E.P.S.M. N° 10187 "El Virrey" pertenece a la UGEL Lambayeque, bajo la Dirección
-                                Regional
-                                de Educación de Lambayeque (DRE Lambayeque).
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item" data-categoria="admision">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq3">
-                                ¿Cómo se asignan las vacantes disponibles?
-                            </button>
-                        </h2>
-                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#acordeonFaq">
-                            <div class="accordion-body">
-                                Al ser una institución educativa pública, las vacantes se gestionan a través de la
-                                plataforma
-                                SIAGIE del Ministerio de Educación, conforme a los criterios de priorización
-                                establecidos por la
-                                UGEL Lambayeque (cercanía al domicilio, hermanos ya matriculados, entre otros). Para
-                                consultas
-                                específicas sobre disponibilidad, puedes acercarte a secretaría.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-categoria="general">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq9">
-                                ¿Cuál es el uniforme oficial del colegio?
-                            </button>
-                        </h2>
-                        <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#acordeonFaq">
-                            <div class="accordion-body">
-                                Puedes ver el detalle completo del uniforme de Primaria y Secundaria en la sección
-                                "Nosotros" de nuestro sitio web, en el apartado de Uniforme Escolar.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-categoria="general">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq10">
-                                ¿Cómo puedo comunicarme con un docente específico?
-                            </button>
-                        </h2>
-                        <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#acordeonFaq">
-                            <div class="accordion-body">
-                                Puedes acercarte a secretaría o comunicarte por nuestro formulario de contacto,
-                                indicando el nombre del docente y el motivo de tu consulta, para que te orienten
-                                sobre la mejor forma de comunicación.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <div class="accordion" id="acordeonFaq"></div>
 
             <p id="sinResultadosFaq" class="sin-resultados d-none">No encontramos preguntas que coincidan con tu
                 búsqueda.</p>
@@ -166,6 +72,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/includes.js"></script>
     <script src="js/filtro.js"></script>
+    <script src="js/faq-dinamico.js"></script>
 </body>
 
 </html>

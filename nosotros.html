@@ -27,28 +27,12 @@
             <div class="hero-linea mx-auto"></div>
         </section>
 
-        <!-- Quiénes somos -->
+        <!-- Quiénes somos — dinámico desde data/nosotros.json -->
         <section class="container quienes-somos-section">
             <div class="row align-items-center g-4">
                 <div class="col-lg-6">
                     <h2 class="titulo-seccion">¿QUIÉNES SOMOS?</h2>
-                    <p class="parrafo-institucional">
-                        La I.E.P.S.M. N° 10187 "El Virrey" es una institución educativa de los niveles Primaria y
-                        Secundaria, ubicada en el Distrito de Olmos, región Lambayeque. Somos una institución que asume
-                        la responsabilidad de formar seres humanos capaces de enfrentar los retos de un mundo que cambia
-                        incesantemente.
-                    </p>
-                    <p class="parrafo-institucional">
-                        Para lograrlo, brindamos una formación integral en espacios seguros e inclusivos, fomentando una
-                        sana convivencia libre de discriminación y violencia. A través de una propuesta pedagógica
-                        abierta, flexible, integradora y diversificada, buscamos consolidarnos para el año 2027 como la
-                        mejor Institución Educativa del distrito.
-                    </p>
-                    <p class="parrafo-institucional">
-                        Trabajamos con sólidos valores éticos para ser una escuela de calidad y eco eficiente,
-                        ejecutando proyectos innovadores e integrando tecnologías que permitan a nuestros estudiantes
-                        desenvolverse con éxito en la sociedad de cambios.
-                    </p>
+                    <div id="quienesSomosTexto"></div>
                 </div>
                 <div class="col-lg-6">
                     <img src="img/comunidad-virrey.jpg" alt="Comunidad educativa El Virrey"
@@ -57,6 +41,7 @@
             </div>
         </section>
 
+        <!-- Historia — dinámico desde data/nosotros.json -->
         <section class="container historia-section">
             <h2 class="titulo-seccion">NUESTRA HISTORIA</h2>
             <div class="row align-items-center g-4">
@@ -64,18 +49,7 @@
                     <img src="img/virrey.jpg" alt="Fachada histórica del colegio"
                         class="img-fluid rounded-institucional">
                 </div>
-                <div class="col-lg-7 order-lg-1">
-                    <p class="parrafo-institucional">
-                        Fundada al servicio de la comunidad de Olmos, la Institución Educativa N° 10187 "El Virrey"
-                        nació con el propósito de acercar educación de calidad a las familias de la zona. A lo largo
-                        de los años, hemos crecido junto a nuestra comunidad, ampliando nuestra infraestructura y
-                        fortaleciendo nuestro proyecto educativo.
-                    </p>
-                    <p class="parrafo-institucional">
-                        Hoy, "El Virrey" es reconocido en Olmos por su compromiso con la formación en valores y la
-                        excelencia académica, siendo la lema institucional: <strong>"Hoy, mañana y siempre"</strong>.
-                    </p>
-                </div>
+                <div class="col-lg-7 order-lg-1" id="historiaTexto"></div>
             </div>
             <div class="text-center mt-4">
                 <button type="button" class="btn btn-institucional btn-institucional-fill rounded-pill px-4"
@@ -107,9 +81,8 @@
                 </div>
             </div>
         </div>
-        </section>
 
-        <!-- Misión y Visión -->
+        <!-- Misión y Visión — dinámico desde data/nosotros.json -->
         <section class="container mision-vision-section">
             <h2 class="titulo-seccion">MISIÓN Y VISIÓN</h2>
             <div class="row g-4">
@@ -117,92 +90,38 @@
                     <div class="mv-card hover-lift">
                         <div class="mv-icono"><i class="bi bi-bullseye"></i></div>
                         <h3 class="mv-titulo">MISIÓN</h3>
-                        <p class="mv-texto">
-                            Somos una Institución, que asume la responsabilidad de formar seres humanos capaces de
-                            enfrentar los retos de un mundo que cambia incesantemente, brindando para ello en una
-                            formación integral espacios seguros e inclusivos, con una sana convivencia, libres de
-                            discriminación y violencia.
-                        </p>
+                        <p class="mv-texto" id="misionTexto"></p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="mv-card hover-lift">
                         <div class="mv-icono"><i class="bi bi-eye"></i></div>
                         <h3 class="mv-titulo">VISIÓN</h3>
-                        <p class="mv-texto">
-                            La Institución Educativa 10187 “EL VIRREY”, aspira al año 2027 ser la mejor Institución
-                            Educativa del Distrito de Olmos en la región Lambayeque en los niveles Primaria y Secundaria
-                            a través de una propuesta pedagógica abierta, flexible, integradora y diversificada con
-                            valores éticos, una escuela de calidad y eco eficiente que ejecuta proyectos innovadores,
-                            integrando tecnologías que le permitan desenvolverse en la sociedad de cambios
-                        </p>
+                        <p class="mv-texto" id="visionTexto"></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Valores institucionales -->
+        <!-- Valores institucionales — dinámico desde data/nosotros.json -->
         <section class="container valores-institucionales-section">
             <h2 class="titulo-seccion">VALORES INSTITUCIONALES</h2>
-            <div class="row g-3">
-                <div class="col-md-3 col-sm-6">
-                    <div class="valor-inst-card hover-lift">
-                        <i class="bi bi-heart-fill"></i>
-                        <h3 class="valor-inst-titulo">Respeto</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="valor-inst-card hover-lift">
-                        <i class="bi bi-shield-check"></i>
-                        <h3 class="valor-inst-titulo">Responsabilidad</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="valor-inst-card hover-lift">
-                        <i class="bi bi-people-fill"></i>
-                        <h3 class="valor-inst-titulo">Solidaridad</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="valor-inst-card hover-lift">
-                        <i class="bi bi-award-fill"></i>
-                        <h3 class="valor-inst-titulo">Excelencia</h3>
-                    </div>
-                </div>
-            </div>
+            <div class="row g-3" id="valoresGrid"></div>
         </section>
 
-        <!-- Equipo directivo -->
+        <!-- Equipo directivo — dinámico desde data/nosotros.json -->
         <section class="container equipo-section">
             <h2 class="titulo-seccion">EQUIPO DIRECTIVO</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">José Abel Quintana Castro</h3>
-                        <p class="equipo-cargo">Director</p>
-                    </div>
-                </div>
-            </div>
+            <div class="row g-4 justify-content-center" id="equipoDirectivoGrid"></div>
         </section>
-        <!-- Equipo Administrativo -->
+
+        <!-- Equipo Administrativo — dinámico desde data/nosotros.json -->
         <section class="container equipo-section">
             <h2 class="titulo-seccion">EQUIPO ADMINISTRATIVO</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Victor Tineo Martin</h3>
-                        <p class="equipo-cargo">Administrativo</p>
-                    </div>
-                </div>
-            </div>
+            <div class="row g-4 justify-content-center" id="equipoAdministrativoGrid"></div>
         </section>
-        <!-- Símbolos institucionales: Escudo -->
+
+        <!-- Símbolos institucionales: Escudo — dinámico desde data/nosotros.json -->
         <section class="container escudo-section">
             <h2 class="titulo-seccion">EL ESCUDO Y SU SIGNIFICADO</h2>
             <div class="row align-items-center g-4">
@@ -210,25 +129,14 @@
                     <img src="img/logo.svg" alt="Escudo institucional El Virrey" class="escudo-img">
                 </div>
                 <div class="col-lg-8">
-                    <ul class="lista-significado">
-                        <li><strong>La antorcha:</strong> representa la luz del conocimiento que guía a nuestros
-                            estudiantes.</li>
-                        <li><strong>Los árboles:</strong> simbolizan el crecimiento y arraigo de nuestra comunidad
-                            educativa.</li>
-                        <li><strong>El sol y las montañas:</strong> representan a Olmos y el nuevo amanecer que cada
-                            generación de estudiantes trae consigo.</li>
-                        <li><strong>El lema "Estudio, Dedicación y Servicio":</strong> resume los valores que formamos
-                            en cada estudiante.</li>
-                        <li><strong>"Hoy, mañana y siempre":</strong> refleja nuestro compromiso permanente con la
-                            educación de Olmos.</li>
-                    </ul>
+                    <ul class="lista-significado" id="escudoLista"></ul>
                 </div>
             </div>
         </section>
 
-        <!-- Himno Institucional -->
+        <!-- Himno Institucional — estático (obra fija) -->
         <section class="container himno-section">
-            <h2 class="titulo-seccion">HIMNO A LA I.E. 10187 “EL VIRREY” - OLMOS </h2>
+            <h2 class="titulo-seccion">HIMNO A LA I.E. 10187 "EL VIRREY" - OLMOS </h2>
             <div class="himno-card">
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-5">
@@ -246,7 +154,7 @@
                                 Con valores marchamos unidos,<br>
                                 y un futuro que vemos nacer,<br>
                                 El estudio, dedicación y servicio<br>
-                                Es tu lema colegio “EL VIRREY”.</p>
+                                Es tu lema colegio "EL VIRREY".</p>
                             <p><strong>ESTROFA I</strong><br>
                                 En tus aulas se gesta el mañana,<br>
                                 Un espacio de paz e inclusión,<br>
@@ -281,7 +189,7 @@
             </div>
         </section>
 
-        <!-- Uniforme Escolar -->
+        <!-- Uniforme Escolar — textos dinámicos desde data/nosotros.json -->
         <section class="container uniforme-section">
             <h2 class="titulo-seccion">UNIFORME ESCOLAR</h2>
             <p class="parrafo-institucional">
@@ -293,8 +201,7 @@
                         <img src="img/uniforme-diario.png" alt="Uniforme diario institucional" class="uniforme-img">
                         <div class="uniforme-body">
                             <h3 class="uniforme-titulo">UNIFORME DIARIO</h3>
-                            <p class="uniforme-texto">Camisa con logo institucional y pantalón/falda azul
-                                marino, de uso obligatorio en clases regulares.</p>
+                            <p class="uniforme-texto" id="uniformeDiarioTexto"></p>
                         </div>
                     </div>
                 </div>
@@ -303,8 +210,7 @@
                         <img src="img/uniforme-fisica.png" alt="Uniforme de Educación Física" class="uniforme-img">
                         <div class="uniforme-body">
                             <h3 class="uniforme-titulo">UNIFORME DE EDUCACIÓN FÍSICA</h3>
-                            <p class="uniforme-texto">Buzo oficial institucional, de uso exclusivo en las clases de
-                                Educación Física y actividades deportivas.</p>
+                            <p class="uniforme-texto" id="uniformeFisicaTexto"></p>
                         </div>
                     </div>
                 </div>
@@ -317,6 +223,7 @@
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/includes.js"></script>
+    <script src="js/nosotros-dinamico.js"></script>
 </body>
 
 </html>

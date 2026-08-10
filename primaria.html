@@ -45,10 +45,12 @@
                 </div>
             </div>
         </section>
+
         <section class="container areas-section">
             <h2 class="titulo-seccion">ÁREAS CURRICULARES</h2>
             <div class="row g-3" id="areasGrid"></div>
         </section>
+
         <section class="container horario-section">
             <h2 class="titulo-seccion">HORARIO ESCOLAR</h2>
             <div class="horario-card">
@@ -56,61 +58,24 @@
                     <div class="col-md-4">
                         <i class="bi bi-sunrise-fill"></i>
                         <h3 class="horario-titulo">Ingreso</h3>
-                        <p class="horario-hora">8:00 AM</p>
+                        <p class="horario-hora" id="horarioIngreso"></p>
                     </div>
                     <div class="col-md-4">
                         <i class="bi bi-cup-hot-fill"></i>
                         <h3 class="horario-titulo">Recreo</h3>
-                        <p class="horario-hora">10:15 AM - 10:45 AM</p>
+                        <p class="horario-hora" id="horarioRecreo"></p>
                     </div>
                     <div class="col-md-4">
                         <i class="bi bi-sunset-fill"></i>
                         <h3 class="horario-titulo">Salida</h3>
-                        <p class="horario-hora">1:00 PM</p>
+                        <p class="horario-hora" id="horarioSalida"></p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="container docentes-section">
             <h2 class="titulo-seccion">DOCENTES DE PRIMARIA</h2>
-            <div class="row g-4">
-                <div class="col-md-3 col-sm-6">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Rossana Magaly Camizan Larios</h3>
-                        <p class="equipo-cargo">1° Primaria</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Esther Milagros Soplapuco Santos</h3>
-                        <p class="equipo-cargo">2° Primaria</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Jacqueline Mariela Masias Santamaría</h3>
-                        <p class="equipo-cargo">3° - 4° Primaria</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Alicia Gisella Cespedes Ayudante</h3>
-                        <p class="equipo-cargo">5° - 6° Primaria</p>
-                    </div>
-                </div>
-            </div>
+            <div class="row g-4" id="docentesGrid"></div>
         </section>
 
         <section class="container classroom-section">
@@ -118,80 +83,7 @@
             <p class="parrafo-institucional">
                 Selecciona el grado correspondiente para ingresar directamente al aula virtual de Google Classroom.
             </p>
-            <div class="row g-3">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">1°</div>
-                            <h3 class="card-title h5">1° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODU1NzQwNjY1Mzc1?cjc=yhtixwxl" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">2°</div>
-                            <h3 class="card-title h5">2° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODcxNjA4MTU2MDA2?cjc=6cglp62c" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">3°</div>
-                            <h3 class="card-title h5">3° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODcxNjA5OTc0MTkx?cjc=klxoj622" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">4°</div>
-                            <h3 class="card-title h5">4° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODcxNjEwMDI1ODMw?cjc=3tszgl72" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">5°</div>
-                            <h3 class="card-title h5">5° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODcxNjA2OTU2OTYx?cjc=ernh3ak6" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">6°</div>
-                            <h3 class="card-title h5">6° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODU1NzQwNjU0MjU3?cjc=hcqq2yf4" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="row g-3" id="classroomGrid"></div>
         </section>
 
     </main>
@@ -200,6 +92,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/includes.js"></script>
     <script src="js/areas-nivel.js"></script>
+    <script src="js/plantel-nivel.js"></script>
 </body>
 
 </html>

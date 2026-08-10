@@ -1,0 +1,51 @@
+{
+    "horario": {
+        "ingreso": "8:00 AM",
+        "recreo": "10:15 AM - 10:45 AM",
+        "salida": "1:00 PM"
+    },
+    "docentes": [
+        {
+            "nombre": "Rossana Magaly Camizan Larios",
+            "cargo": "1° Primaria"
+        },
+        {
+            "nombre": "Esther Milagros Soplapuco Santos",
+            "cargo": "2° Primaria"
+        },
+        {
+            "nombre": "Jacqueline Mariela Masias Santamaría",
+            "cargo": "3° - 4° Primaria"
+        },
+        {
+            "nombre": "Alicia Gisella Cespedes Ayudante",
+            "cargo": "5° - 6° Primaria"
+        }
+    ],
+    "classroom": [
+        {
+            "grado": "1°",
+            "url": "https://classroom.google.com/c/ODU1NzQwNjY1Mzc1?cjc=yhtixwxl"
+        },
+        {
+            "grado": "2°",
+            "url": "https://classroom.google.com/c/ODcxNjA4MTU2MDA2?cjc=6cglp62c"
+        },
+        {
+            "grado": "3°",
+            "url": "https://classroom.google.com/c/ODcxNjA5OTc0MTkx?cjc=klxoj622"
+        },
+        {
+            "grado": "4°",
+            "url": "https://classroom.google.com/c/ODcxNjEwMDI1ODMw?cjc=3tszgl72"
+        },
+        {
+            "grado": "5°",
+            "url": "https://classroom.google.com/c/ODcxNjA2OTU2OTYx?cjc=ernh3ak6"
+        },
+        {
+            "grado": "6°",
+            "url": "https://classroom.google.com/c/ODU1NzQwNjU0MjU3?cjc=hcqq2yf4"
+        }
+    ]
+}

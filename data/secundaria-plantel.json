@@ -1,0 +1,55 @@
+{
+    "horario": {
+        "ingreso": "7:45 AM",
+        "recreo": "10:45 AM - 11:05 AM",
+        "salida": "1:20 PM"
+    },
+    "docentes": [
+        {
+            "nombre": "Elizabeth Bravo Palma",
+            "cargo": "Ciencias Sociales - DPCC"
+        },
+        {
+            "nombre": "Nixsa Perez Piscoya",
+            "cargo": "Inglés - Religión"
+        },
+        {
+            "nombre": "Wilmer Nelson Rivera Herrera",
+            "cargo": "Educación Física - Arte y Cultura"
+        },
+        {
+            "nombre": "Ana Cecilia Yesquen Macalopú",
+            "cargo": "Comunicación"
+        },
+        {
+            "nombre": "Doris Edith Vásquez Díaz",
+            "cargo": "Ciencia y Tecnología - EPT"
+        },
+        {
+            "nombre": "Javier Guevara Vásquez",
+            "cargo": "Matemática"
+        }
+    ],
+    "classroom": [
+        {
+            "grado": "1°",
+            "url": "https://classroom.google.com/c/ODcxNjA5NTgwMDAz?cjc=pl3zfd5h"
+        },
+        {
+            "grado": "2°",
+            "url": "https://classroom.google.com/c/ODcxNjEwMjkyMzky?cjc=7qigxz54"
+        },
+        {
+            "grado": "3°",
+            "url": "https://classroom.google.com/c/ODcxNjA1MzQ1ODQy?cjc=fbrek4te"
+        },
+        {
+            "grado": "4°",
+            "url": "https://classroom.google.com/c/ODcxNjA4NTExMzE4?cjc=yk5xwjab"
+        },
+        {
+            "grado": "5°",
+            "url": "https://classroom.google.com/c/ODcxNjA4OTk1ODYx?cjc=ho6agyph"
+        }
+    ]
+}

@@ -453,3 +453,144 @@ collections:
           - { name: "titulo", label: "Título del documento", widget: "string" }
           - { name: "fecha", label: "Fecha de publicación", widget: "string" }
           - { name: "archivo", label: "Archivo PDF", widget: "file" }
+# ─────────────────────────────────────────
+  # DOCENTES, HORARIO Y CLASSROOM
+  # ─────────────────────────────────────────
+  - name: "plantel_niveles"
+    label: "🏫 Docentes, Horario y Classroom"
+    files:
+      - name: "primaria_plantel"
+        label: "Primaria"
+        file: "data/primaria-plantel.json"
+        fields:
+          - name: "horario"
+            label: "Horario escolar"
+            widget: "object"
+            fields:
+              - { name: "ingreso", label: "Hora de ingreso", widget: "string" }
+              - { name: "recreo", label: "Horario de recreo (ej: 10:15 AM - 10:45 AM)", widget: "string" }
+              - { name: "salida", label: "Hora de salida", widget: "string" }
+          - name: "docentes"
+            label: "Docentes"
+            widget: "list"
+            summary: "{{fields.nombre}}"
+            fields:
+              - { name: "nombre", label: "Nombre completo", widget: "string" }
+              - { name: "cargo", label: "Grado(s) a cargo (ej: 1° Primaria)", widget: "string" }
+          - name: "classroom"
+            label: "Enlaces de Google Classroom por grado"
+            widget: "list"
+            summary: "{{fields.grado}}"
+            fields:
+              - { name: "grado", label: "Grado (ej: 1°)", widget: "string" }
+              - { name: "url", label: "Enlace de Google Classroom", widget: "string" }
+      - name: "secundaria_plantel"
+        label: "Secundaria"
+        file: "data/secundaria-plantel.json"
+        fields:
+          - name: "horario"
+            label: "Horario escolar"
+            widget: "object"
+            fields:
+              - { name: "ingreso", label: "Hora de ingreso", widget: "string" }
+              - { name: "recreo", label: "Horario de recreo", widget: "string" }
+              - { name: "salida", label: "Hora de salida", widget: "string" }
+          - name: "docentes"
+            label: "Docentes"
+            widget: "list"
+            summary: "{{fields.nombre}}"
+            fields:
+              - { name: "nombre", label: "Nombre completo", widget: "string" }
+              - { name: "cargo", label: "Área(s) a cargo (ej: Matemática)", widget: "string" }
+          - name: "classroom"
+            label: "Enlaces de Google Classroom por grado"
+            widget: "list"
+            summary: "{{fields.grado}}"
+            fields:
+              - { name: "grado", label: "Grado (ej: 1°)", widget: "string" }
+              - { name: "url", label: "Enlace de Google Classroom", widget: "string" }
+
+  # ─────────────────────────────────────────
+  # PÁGINA: NOSOTROS
+  # ─────────────────────────────────────────
+  - name: "nosotros"
+    label: "🏛️ Página: Nosotros"
+    files:
+      - name: "contenido"
+        label: "Historia, misión, visión y equipo"
+        file: "data/nosotros.json"
+        fields:
+          - name: "quienes_somos"
+            label: "¿Quiénes somos? (párrafos)"
+            widget: "list"
+            field: { name: "parrafo", label: "Párrafo", widget: "text" }
+          - name: "historia"
+            label: "Nuestra historia (párrafos)"
+            widget: "list"
+            field: { name: "parrafo", label: "Párrafo", widget: "text" }
+          - { name: "mision", label: "Misión", widget: "text" }
+          - { name: "vision", label: "Visión", widget: "text" }
+          - name: "valores"
+            label: "Valores institucionales"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - name: "icono"
+                label: "Ícono"
+                widget: "select"
+                options:
+                  - { label: "❤️ Corazón", value: "bi-heart-fill" }
+                  - { label: "🛡️ Escudo", value: "bi-shield-check" }
+                  - { label: "👥 Personas", value: "bi-people-fill" }
+                  - { label: "🏅 Premio", value: "bi-award-fill" }
+                  - { label: "⭐ Estrella", value: "bi-star-fill" }
+              - { name: "titulo", label: "Nombre del valor", widget: "string" }
+          - name: "equipo_directivo"
+            label: "Equipo directivo"
+            widget: "list"
+            summary: "{{fields.nombre}}"
+            fields:
+              - { name: "nombre", label: "Nombre completo", widget: "string" }
+              - { name: "cargo", label: "Cargo", widget: "string" }
+          - name: "equipo_administrativo"
+            label: "Equipo administrativo"
+            widget: "list"
+            summary: "{{fields.nombre}}"
+            fields:
+              - { name: "nombre", label: "Nombre completo", widget: "string" }
+              - { name: "cargo", label: "Cargo", widget: "string" }
+          - name: "escudo_significado"
+            label: "Significado del escudo"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: "titulo", label: "Elemento del escudo", widget: "string" }
+              - { name: "texto", label: "Significado", widget: "string" }
+          - { name: "uniforme_diario_texto", label: "Descripción del uniforme diario", widget: "text" }
+          - { name: "uniforme_fisica_texto", label: "Descripción del uniforme de Educación Física", widget: "text" }
+
+  # ─────────────────────────────────────────
+  # PREGUNTAS FRECUENTES
+  # ─────────────────────────────────────────
+  - name: "faq"
+    label: "❓ Preguntas Frecuentes"
+    files:
+      - name: "listado"
+        label: "Preguntas y respuestas"
+        file: "data/faq.json"
+        fields:
+          - name: "preguntas"
+            label: "Preguntas"
+            widget: "list"
+            summary: "{{fields.pregunta}}"
+            fields:
+              - name: "categoria"
+                label: "Categoría"
+                widget: "select"
+                options:
+                  - { label: "Admisión y Matrícula", value: "admision" }
+                  - { label: "Académico", value: "academico" }
+                  - { label: "Pagos", value: "pagos" }
+                  - { label: "General", value: "general" }
+              - { name: "pregunta", label: "Pregunta", widget: "string" }
+              - { name: "respuesta", label: "Respuesta", widget: "text" }

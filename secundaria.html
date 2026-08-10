@@ -45,10 +45,12 @@
                 </div>
             </div>
         </section>
+
         <section class="container areas-section">
             <h2 class="titulo-seccion">ÁREAS CURRICULARES</h2>
             <div class="row g-3" id="areasGrid"></div>
         </section>
+
         <section class="container horario-section">
             <h2 class="titulo-seccion">HORARIO ESCOLAR</h2>
             <div class="horario-card">
@@ -56,79 +58,24 @@
                     <div class="col-md-4">
                         <i class="bi bi-sunrise-fill"></i>
                         <h3 class="horario-titulo">Ingreso</h3>
-                        <p class="horario-hora">7:45 AM</p>
+                        <p class="horario-hora" id="horarioIngreso"></p>
                     </div>
                     <div class="col-md-4">
                         <i class="bi bi-cup-hot-fill"></i>
                         <h3 class="horario-titulo">Recreo</h3>
-                        <p class="horario-hora">10:45 AM - 11:05 AM</p>
+                        <p class="horario-hora" id="horarioRecreo"></p>
                     </div>
                     <div class="col-md-4">
                         <i class="bi bi-sunset-fill"></i>
                         <h3 class="horario-titulo">Salida</h3>
-                        <p class="horario-hora">1:20 PM</p>
+                        <p class="horario-hora" id="horarioSalida"></p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="container docentes-section">
             <h2 class="titulo-seccion">DOCENTES DE SECUNDARIA</h2>
-            <div class="row g-4">
-                <div class="col-md-3 col-sm-6">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Elizabeth Bravo Palma</h3>
-                        <p class="equipo-cargo">Ciencias Sociales - DPCC</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Nixsa Perez Piscoya</h3>
-                        <p class="equipo-cargo">Inglés - Religión</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Wilmer Nelson Rivera Herrera</h3>
-                        <p class="equipo-cargo">Educación Física - Arte y Cultura</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Ana Cecilia Yesquen Macalopú</h3>
-                        <p class="equipo-cargo">Comunicación</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Doris Edith Vásquez Díaz</h3>
-                        <p class="equipo-cargo">Ciencia y Tecnología - EPT</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="equipo-card hover-lift">
-                        <div class="equipo-icono">
-                            <i class="bi bi-person-fill"></i>
-                        </div>
-                        <h3 class="equipo-nombre">Javier Guevara Vásquez</h3>
-                        <p class="equipo-cargo">Matemática</p>
-                    </div>
-                </div>
-            </div>
+            <div class="row g-4" id="docentesGrid"></div>
         </section>
 
         <section class="container classroom-section">
@@ -136,75 +83,16 @@
             <p class="parrafo-institucional">
                 Selecciona el grado correspondiente para ingresar directamente al aula virtual de Google Classroom.
             </p>
-            <div class="row g-3">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">1°</div>
-                            <h3 class="card-title h5">1° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODcxNjA5NTgwMDAz?cjc=pl3zfd5h" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">2°</div>
-                            <h3 class="card-title h5">2° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODcxNjEwMjkyMzky?cjc=7qigxz54" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">3°</div>
-                            <h3 class="card-title h5">3° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODcxNjA1MzQ1ODQy?cjc=fbrek4te" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">4°</div>
-                            <h3 class="card-title h5">4° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODcxNjA4NTExMzE4?cjc=yk5xwjab" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card h-100 hover-lift text-center">
-                        <div class="card-body">
-                            <div class="classroom-icono">5°</div>
-                            <h3 class="card-title h5">5° Grado</h3>
-                            <a href="https://classroom.google.com/c/ODcxNjA4OTk1ODYx?cjc=ho6agyph" target="_blank"
-                                rel="noopener" class="btn btn-institucional-fill w-100 mt-2">
-                                Ingresar <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="row g-3" id="classroomGrid"></div>
         </section>
+
     </main>
     <div id="footer"></div>
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/includes.js"></script>
     <script src="js/areas-nivel.js"></script>
+    <script src="js/plantel-nivel.js"></script>
 </body>
 
 </html>
