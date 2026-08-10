@@ -29,54 +29,17 @@
 
         <section class="hero-inicio fade-in">
             <div class="hero-imagen">
-                <img src="img/virrey.jpg" alt="Fachada del colegio El Virrey" class="w-100 h-100">
+                <img src="img/virrey.jpg" alt="Fachada del colegio El Virrey" class="w-100 h-100" id="heroImagen">
                 <div class="hero-overlay"></div>
             </div>
             <div class="hero-texto text-center">
-                <h1 class="hero-titulo">FORMA PARTE DE NUESTRA COMUNIDAD EDUCATIVA</h1>
+                <h1 class="hero-titulo" id="heroTitulo"></h1>
                 <div class="hero-linea mx-auto"></div>
             </div>
         </section>
 
         <section class="container">
-            <div class="row g-3 valores-row">
-                <div class="col-md-3 col-sm-6 fade-in">
-                    <div class="valor-card d-flex align-items-center gap-3">
-                        <div class="valor-icono"><i class="bi bi-book-half"></i></div>
-                        <div>
-                            <h2 class="valor-titulo">EDUCACIÓN<br>DE CALIDAD</h2>
-                            <p class="valor-texto">Formamos personas íntegras para un mundo mejor.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 fade-in">
-                    <div class="valor-card d-flex align-items-center gap-3">
-                        <div class="valor-icono"><i class="bi bi-people-fill"></i></div>
-                        <div>
-                            <h2 class="valor-titulo">FORMACIÓN<br>EN VALORES</h2>
-                            <p class="valor-texto">Cultivamos respeto, responsabilidad y solidaridad.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 fade-in">
-                    <div class="valor-card d-flex align-items-center gap-3">
-                        <div class="valor-icono"><i class="bi bi-mortarboard-fill"></i></div>
-                        <div>
-                            <h2 class="valor-titulo">DOCENTES<br>COMPROMETIDOS</h2>
-                            <p class="valor-texto">Acompañamiento que impulsa tus sueños.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 fade-in">
-                    <div class="valor-card d-flex align-items-center gap-3">
-                        <div class="valor-icono"><i class="bi bi-star-fill"></i></div>
-                        <div>
-                            <h2 class="valor-titulo">FUTUROS<br>SIN LÍMITES</h2>
-                            <p class="valor-texto">Preparados para los desafíos de mañana.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="row g-3 valores-row" id="valoresGrid"></div>
         </section>
 
         <!-- Logros Destacados — dinámico desde data/logros.json -->
@@ -193,6 +156,7 @@
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/includes.js"></script>
+    <script src="js/hero-dinamico.js"></script>
     <script src="js/utilidades.js"></script>
     <script src="js/alerta-ticker.js"></script>
     <script src="js/modal-emergencia.js"></script>

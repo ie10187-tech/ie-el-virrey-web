@@ -1,0 +1,26 @@
+{
+    "hero_titulo": "FORMA PARTE DE NUESTRA COMUNIDAD EDUCATIVA",
+    "hero_imagen": "img/virrey.jpg",
+    "valores": [
+        {
+            "icono": "bi-book-half",
+            "titulo": "EDUCACIÓN<br>DE CALIDAD",
+            "texto": "Formamos personas íntegras para un mundo mejor."
+        },
+        {
+            "icono": "bi-people-fill",
+            "titulo": "FORMACIÓN<br>EN VALORES",
+            "texto": "Cultivamos respeto, responsabilidad y solidaridad."
+        },
+        {
+            "icono": "bi-mortarboard-fill",
+            "titulo": "DOCENTES<br>COMPROMETIDOS",
+            "texto": "Acompañamiento que impulsa tus sueños."
+        },
+        {
+            "icono": "bi-star-fill",
+            "titulo": "FUTUROS<br>SIN LÍMITES",
+            "texto": "Preparados para los desafíos de mañana."
+        }
+    ]
+}

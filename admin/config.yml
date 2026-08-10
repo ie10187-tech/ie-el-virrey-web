@@ -594,3 +594,33 @@ collections:
                   - { label: "General", value: "general" }
               - { name: "pregunta", label: "Pregunta", widget: "string" }
               - { name: "respuesta", label: "Respuesta", widget: "text" }
+
+# ─────────────────────────────────────────
+  # PORTADA — HERO Y VALORES
+  # ─────────────────────────────────────────
+  - name: "inicio_hero"
+    label: "🏠 Portada — Hero y Valores"
+    files:
+      - name: "contenido"
+        label: "Título principal y tarjetas de valores"
+        file: "data/inicio-hero.json"
+        fields:
+          - { name: "hero_titulo", label: "Título principal (puede usar <br> para salto de línea)", widget: "string" }
+          - { name: "hero_imagen", label: "Imagen de fondo del hero", widget: "image" }
+          - name: "valores"
+            label: "Tarjetas de valores (4 recomendado)"
+            widget: "list"
+            summary: "{{fields.titulo}}"
+            fields:
+              - name: "icono"
+                label: "Ícono"
+                widget: "select"
+                options:
+                  - { label: "📖 Libro", value: "bi-book-half" }
+                  - { label: "👥 Personas", value: "bi-people-fill" }
+                  - { label: "🎓 Birrete", value: "bi-mortarboard-fill" }
+                  - { label: "⭐ Estrella", value: "bi-star-fill" }
+                  - { label: "❤️ Corazón", value: "bi-heart-fill" }
+                  - { label: "🏆 Trofeo", value: "bi-trophy-fill" }
+              - { name: "titulo", label: "Título (puede usar <br> para salto de línea)", widget: "string" }
+              - { name: "texto", label: "Descripción breve", widget: "string" }
