@@ -21,7 +21,7 @@
     <div id="header"></div>
 
     <main>
-        
+
         <!-- Hero -->
         <section class="hero-pagina fade-in text-center">
             <h1 class="hero-titulo">LIBRO DE RECLAMACIONES VIRTUAL</h1>
@@ -55,9 +55,13 @@
                         establecido por ley.
                     </p>
 
-                    <form id="formReclamo" class="form-contacto" name="libro-reclamaciones" method="POST"
-                        data-netlify="true" action="/gracias-reclamo.html" novalidate>
-                        <input type="hidden" name="form-name" value="libro-reclamaciones">
+                    <form id="formReclamo" class="form-contacto" method="POST" action="https://api.web3forms.com/submit"
+                        novalidate>
+                        <input type="hidden" name="access_key" value="50e23431-35de-487d-861e-ae757539f72b">
+                        <input type="hidden" name="subject" value="Nuevo Libro de Reclamaciones - El Virrey">
+                        <input type="hidden" name="redirect"
+                            value="https://ie10187-tech.github.io/ie-el-virrey-web/gracias-reclamo.html">
+                        <input type="checkbox" name="botcheck" class="d-none" style="display:none;">
 
                         <h2 class="legal-subtitulo">1. Datos del reclamante</h2>
                         <div class="row g-3">

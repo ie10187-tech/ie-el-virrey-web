@@ -60,9 +60,13 @@
                 <!-- Formulario -->
                 <div class="col-lg-6">
                     <h2 class="titulo-seccion">ENVÍANOS UN MENSAJE</h2>
-                    <form id="formContacto" class="form-contacto" name="contacto" method="POST" data-netlify="true"
-                        action="/gracias.html" novalidate>
-                        <input type="hidden" name="form-name" value="contacto">
+                    <form id="formContacto" class="form-contacto" method="POST"
+                        action="https://api.web3forms.com/submit" novalidate>
+                        <input type="hidden" name="access_key" value="50e23431-35de-487d-861e-ae757539f72b">
+                        <input type="hidden" name="subject" value="Nuevo mensaje desde el sitio web - El Virrey">
+                        <input type="hidden" name="redirect"
+                            value="https://ie10187-tech.github.io/ie-el-virrey-web/gracias.html">
+                        <input type="checkbox" name="botcheck" class="d-none" style="display:none;">
 
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre completo</label>
