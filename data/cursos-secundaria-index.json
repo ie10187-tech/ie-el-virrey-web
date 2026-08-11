@@ -1,64 +1,59 @@
 {
-    "areas": [
-        {
-            "slug": "comunicacion",
-            "icono": "bi-translate",
-            "titulo": "Comunicación"
-        },
-        {
-            "slug": "matematica",
-            "icono": "bi-calculator-fill",
-            "titulo": "Matemática"
-        },
-        {
-            "slug": "ciencias-sociales",
-            "icono": "bi-globe-americas",
-            "titulo": "Ciencias Sociales"
-        },
-        {
-            "slug": "ciencia-tecnologia",
-            "icono": "bi-lightbulb",
-            "titulo": "Ciencia y Tecnología"
-        },
-        {
-            "slug": "educacion-fisica",
-            "icono": "bi-controller",
-            "titulo": "Educación Física"
-        },
-        {
-            "slug": "arte-cultura",
-            "icono": "bi-palette-fill",
-            "titulo": "Arte y Cultura"
-        },
-        {
-            "slug": "ingles",
-            "icono": "bi-chat-square-text-fill",
-            "titulo": "Inglés"
-        },
-        {
-            "slug": "educacion-trabajo",
-            "icono": "bi-tools",
-            "titulo": "Educación para el Trabajo"
-        },
-        {
-            "slug": "desarrollo-personal",
-            "icono": "bi-people-fill",
-            "titulo": "Desarrollo Personal Ciudadanía y Cívica"
-        },
-        {
-            "slug": "religion",
-            "icono": "bi-book-half",
-            "titulo": "Religión"
-        },
-        {
-            "slug": "tutoria",
-            "icono": "bi-heart-pulse-fill",
-            "titulo": "Tutoría"
-        },
-        {
-            "slug": "prueba-curso",
-            "icono": "bi-tools",
-            "titulo": "Curso de Prueba"
-        }
-    ]
+  "areas": [
+    {
+      "slug": "comunicacion",
+      "icono": "bi-translate",
+      "titulo": "Comunicación"
+    },
+    {
+      "slug": "matematica",
+      "icono": "bi-calculator-fill",
+      "titulo": "Matemática"
+    },
+    {
+      "slug": "ciencias-sociales",
+      "icono": "bi-globe-americas",
+      "titulo": "Ciencias Sociales"
+    },
+    {
+      "slug": "ciencia-tecnologia",
+      "icono": "bi-lightbulb",
+      "titulo": "Ciencia y Tecnología"
+    },
+    {
+      "slug": "educacion-fisica",
+      "icono": "bi-controller",
+      "titulo": "Educación Física"
+    },
+    {
+      "slug": "arte-cultura",
+      "icono": "bi-palette-fill",
+      "titulo": "Arte y Cultura"
+    },
+    {
+      "slug": "ingles",
+      "icono": "bi-chat-square-text-fill",
+      "titulo": "Inglés"
+    },
+    {
+      "slug": "educacion-trabajo",
+      "icono": "bi-tools",
+      "titulo": "Educación para el Trabajo"
+    },
+    {
+      "slug": "desarrollo-personal",
+      "icono": "bi-people-fill",
+      "titulo": "Desarrollo Personal Ciudadanía y Cívica"
+    },
+    {
+      "slug": "religion",
+      "icono": "bi-book-half",
+      "titulo": "Religión"
+    },
+    {
+      "slug": "tutoria",
+      "icono": "bi-heart-pulse-fill",
+      "titulo": "Tutoría"
+    }
+  ]
 }
