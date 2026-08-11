@@ -54,6 +54,11 @@
             "slug": "tutoria",
             "icono": "bi-heart-pulse-fill",
             "titulo": "Tutoría"
+        },
+        {
+            "slug": "prueba-curso",
+            "icono": "bi-tools",
+            "titulo": "Curso de Prueba"
         }
     ]
 }
