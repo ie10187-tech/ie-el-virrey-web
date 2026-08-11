@@ -8,7 +8,7 @@
   ],
   "galeria": [
     {
-      "src": "/img/uploads/limpieza1.jpeg",
+      "src": "img/uploads/limpieza1.jpeg",
       "alt": "prueba de fotos"
     }
   ],
@@ -16,7 +16,7 @@
     {
       "titulo": "documento",
       "fecha": "10/08/2026",
-      "archivo": "/img/uploads/prueba-curso-archivo.pdf"
+      "archivo": "img/uploads/prueba-curso-archivo.pdf"
     }
   ]
 }
