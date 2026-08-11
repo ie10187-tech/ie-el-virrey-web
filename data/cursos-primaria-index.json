@@ -39,11 +39,6 @@
       "slug": "religion",
       "icono": "bi-book-half",
       "titulo": "Religión"
-    },
-    {
-      "slug": "prueba-curso",
-      "icono": "bi-tools",
-      "titulo": "Prueba"
     }
   ]
 }
