@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: ie10187-tech/ie-el-virrey-web
   branch: main
+  base_url: https://el-virrey-cms-oauth.ie10187elvirrey.workers.dev
+  auth_endpoint: auth
 
 media_folder: "img/uploads"
 public_folder: "img/uploads"
