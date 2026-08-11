@@ -1,11 +1,12 @@
 {
-    "categorias": [
-        "deportes",
-        "ciencias",
-        "cultura",
-        "patio",
-        "robotica",
-        "eventos",
-        "limpieza"
-    ]
+  "categorias": [
+    "deportes",
+    "ciencias",
+    "cultura",
+    "patio",
+    "robotica",
+    "eventos",
+    "limpieza",
+    "categoria-prueba"
+  ]
 }
