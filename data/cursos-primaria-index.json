@@ -1,44 +1,44 @@
 {
-    "areas": [
-        {
-            "slug": "comunicacion",
-            "icono": "bi-translate",
-            "titulo": "Comunicación"
-        },
-        {
-            "slug": "matematica",
-            "icono": "bi-calculator-fill",
-            "titulo": "Matemática"
-        },
-        {
-            "slug": "personal-social",
-            "icono": "bi-globe-americas",
-            "titulo": "Personal Social"
-        },
-        {
-            "slug": "ciencia-tecnologia",
-            "icono": "bi-lightbulb",
-            "titulo": "Ciencia y Tecnología"
-        },
-        {
-            "slug": "educacion-fisica",
-            "icono": "bi-controller",
-            "titulo": "Educación Física"
-        },
-        {
-            "slug": "arte-cultura",
-            "icono": "bi-palette-fill",
-            "titulo": "Arte y Cultura"
-        },
-        {
-            "slug": "tutoria",
-            "icono": "bi-heart-pulse-fill",
-            "titulo": "Tutoría"
-        },
-        {
-            "slug": "religion",
-            "icono": "bi-book-half",
-            "titulo": "Religión"
-        }
-    ]
+  "areas": [
+    {
+      "slug": "comunicacion",
+      "icono": "bi-translate",
+      "titulo": "Comunicación"
+    },
+    {
+      "slug": "matematica",
+      "icono": "bi-calculator-fill",
+      "titulo": "Matemática"
+    },
+    {
+      "slug": "personal-social",
+      "icono": "bi-globe-americas",
+      "titulo": "Personal Social"
+    },
+    {
+      "slug": "ciencia-tecnologia",
+      "icono": "bi-lightbulb",
+      "titulo": "Ciencia y Tecnología"
+    },
+    {
+      "slug": "educacion-fisica",
+      "icono": "bi-controller",
+      "titulo": "Educación Física"
+    },
+    {
+      "slug": "arte-cultura",
+      "icono": "bi-palette-fill",
+      "titulo": "Arte y Cultura"
+    },
+    {
+      "slug": "tutoria",
+      "icono": "bi-heart-pulse-fill",
+      "titulo": "Tutoría"
+    },
+    {
+      "slug": "religion",
+      "icono": "bi-book-half",
+      "titulo": "Religión"
+    }
+  ]
 }
